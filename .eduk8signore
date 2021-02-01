@@ -1,0 +1,8 @@
+./.dockerignore
+./.gitignore
+./Dockerfile
+./LICENSE
+./README.md
+./kustomization.yaml
+./resources
+./local-eduk8s-start.sh

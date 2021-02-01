@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: lab-workshop-1
+spec:
+  portal:
+    registration:
+      type: anonymous
+  workshops:
+  - name: lab-workshop-1
+    capacity: 1
+    expires: 60m
+    orphaned: 5m
