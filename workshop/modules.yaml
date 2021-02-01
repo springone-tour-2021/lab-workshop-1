@@ -8,7 +8,7 @@ modules:
     exercises/01-sample-content:
         name: Sample Content
     exercises/02-create-spring-app:
-        name: This is a Title in Modules.yaml
+        name: Create a Spring Boot App
     exercises/03-creating-the-resources:
         name: This is a Title in Modules.yaml
     workshop-summary:
