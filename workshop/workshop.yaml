@@ -6,5 +6,5 @@ modules:
     - setup-environment
     - exercises/01-sample-content
     - exercises/02-create-spring-app
-    - exercises/03-creating-the-resources
+    - exercises/03-run-the-app
     - workshop-summary
