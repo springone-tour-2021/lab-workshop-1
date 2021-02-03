@@ -11,7 +11,7 @@ spec:
   url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
     image: jdk11-environment:*
-    # files: github.com/springone-tour-2021/lab-workshop-1
+    files: github.com/springone-tour-2021/lab-workshop-1
   session:
     namespaces:
       budget: large
