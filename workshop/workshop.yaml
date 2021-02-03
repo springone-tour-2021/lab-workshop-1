@@ -7,4 +7,7 @@ modules:
     - exercises/01-sample-content
     - exercises/02-create-spring-app
     - exercises/03-run-the-app
+    - exercises/04-containerize
+    - exercises/05-registry
+    - exercises/06-deploy-to-k8s
     - workshop-summary

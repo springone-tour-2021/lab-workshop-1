@@ -11,6 +11,12 @@ modules:
         name: Create a Spring Boot app
     exercises/03-run-the-app:
         name: Run the App
+    exercises/04-containerize:
+        name: Containerize the App
+    exercises/05-registry:
+        name: Putting The Container In A Registry
+    exercises/06-deploy-to-k8s:
+        name: Deploying to Kubernetes
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

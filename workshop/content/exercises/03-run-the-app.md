@@ -18,8 +18,7 @@ Make an HTTP request to [http://localhost:8080](http://localhost:8080/) in anoth
 
 
 ```execute-2
-$ curl http://localhost:8080; echo
-Hello World
+curl http://localhost:8080
 ```
 
 ---
