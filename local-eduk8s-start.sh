@@ -27,5 +27,3 @@ kubectl apply -f ./resources/training-portal.yaml
 
 # Get trainingportals, will have to 
 kubectl get trainingportal --watch
-
-echo "Until you have password, keep executing: kubectl get trainingportal again "
