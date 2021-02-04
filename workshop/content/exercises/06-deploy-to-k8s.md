@@ -145,6 +145,10 @@ NAME                                     DESIRED   CURRENT   READY   AGE
 replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 ```
 
-`watch` is a useful command line tool that you can install on [Linux](https://www.2daygeek.com/linux-watch-command-to-monitor-a-command/) and [OSX](https://osxdaily.com/2010/08/22/install-watch-command-on-os-x/). All it does is continuously executes the command you pass it. You can just run the `kubectl` command specified after the `watch` command but the output will be static as opposed to updating constantly.
+> `watch` is a useful command line tool that you can install on [Linux](https://www.2daygeek.com/linux-watch-command-to-monitor-a-command/) and [OSX](https://osxdaily.com/2010/08/22/install-watch-command-on-os-x/). All it does is continuously execute the command you pass it. You can just run the `kubectl` command specified after the `watch` command but the output will be static as opposed to updating constantly.
 
+Please, terminate the watch process to continue.
+
+```terminal:interrupt-all
+```
 ---

@@ -17,6 +17,10 @@ modules:
         name: Putting The Container In A Registry
     exercises/06-deploy-to-k8s:
         name: Deploying to Kubernetes
+    exercises/07-testing-app:
+        name: Testing the App
+    exercises/08-expose-svc:
+        name: Exposing the Service
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
