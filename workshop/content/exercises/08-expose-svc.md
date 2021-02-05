@@ -7,27 +7,39 @@ NOTE: `LoadBalancer` features are platform specific. The visibility of your app 
 
 *   If we want to expose the service publically we can change the service type to `LoadBalancer`
 
-Open `k8s/service.yaml` and change `ClusterIp` to `LoadBalancer \
-apiVersion: v1`
+Next, you will go to `k8s/service.yaml` and change `ClusterIp` to `LoadBalancer`
 
-
-```editor:insert-value-into-yaml
+Change the the type to LoadBalancer, click below to highlight the value that needs to change.
+```editor:select-matching-text
 file: k8s/service.yaml
-path: spec.type
+text: "type: ClusterIP"
+```
+
+Delete the 16th line `type: ClusterIp` and create `updated-service.yaml'
+```execute-1
+sed '16d' k8s/service.yaml > k8s/updated-service.yaml
+```
+
+Insert the correct value into your service config.
+```editor:insert-value-into-yaml
+file: k8s/updated-service.yaml
+path: spec
 text: |
 value:
-LoadBalancer
+        type: LoadBalancer
 
 ```
 
+```execute-1
+rm k8s/service.yaml
+```
 
 *   
 
-Now apply the updated `service.yaml 
+Now, apply the updated `service.yaml` and your Kubernetes deployment.
 ```execute-1
-kubectl apply -f ./k8s`
+kubectl apply -f ./k8s
 ```
-
 
 *   
 

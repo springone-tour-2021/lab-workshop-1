@@ -21,6 +21,8 @@ modules:
         name: Testing the App
     exercises/08-expose-svc:
         name: Exposing the Service
+    exercises/09-test-loadbalancer:
+        name: Testing the Public LoadBalancer
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

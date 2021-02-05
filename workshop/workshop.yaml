@@ -12,4 +12,5 @@ modules:
     - exercises/06-deploy-to-k8s
     - exercises/07-testing-app
     - exercises/08-expose-svc
+    - exercises/09-test-loadbalancer
     - workshop-summary
