@@ -1,4 +1,4 @@
-minikube start --insecure-registry=192.168.64.0/24 --cpus=4 --memory=8g
+minikube start --insecure-registry=192.168.64.0/24 --cpus=6 --memory=10g
 
 
 minikube addons enable ingress
@@ -13,7 +13,7 @@ IP=$(minikube ip)
 # Configure operator with domain name
 kubectl set env deployment/eduk8s-operator -n eduk8s INGRESS_DOMAIN=$IP.nip.io
 
-# If working with large images configure nginx like so, adding `proxy-body-size: 1g` after in data:
+# If working with large images configure nginx add `proxy-body-size: 1g` in data section:
 #  kubectl edit configmap nginx-load-balancer-conf -n kube-system
 
 # Show if if above worked
