@@ -35,11 +35,13 @@ curl http://localhost:8080
 
 **Congrats you have deployed your first app to Kubernetes 🎉**
 
-[via GIPHY](https://giphy.com/gifs/day-subreddit-msKNSs8rmJ5m)
+```terminal:interrupt-all
+```
+
+<iframe src="https://giphy.com/embed/msKNSs8rmJ5m" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/day-subreddit-msKNSs8rmJ5m">via GIPHY</a></p>
 
 Be sure to stop the `kubectl port-forward` process before moving on
 
-```terminal:interrupt-all
-```
+
 ---
 
