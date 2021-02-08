@@ -29,8 +29,7 @@ kubectl port-forward service/k8s-demo-app 8080:80
 
 
 ```execute-2
-$ curl http://localhost:8080; echo
-Hello World
+curl http://localhost:8080
 ```
 
 

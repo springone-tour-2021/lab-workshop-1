@@ -5,7 +5,7 @@
 
 
 *   In a Cloud environment (Google, Amazon, Azure etc.), Kubernetes will assign the service an external ip
-*   It may take a minute or so for Kubernetes to assign the service an external IP, until it is assigned you might see `&lt;pending>` in the `EXTERNAL-IP` column
+*   It may take a minute or so for Kubernetes to assign the service an external IP, until it is assigned you might see `<pending>` in the `EXTERNAL-IP` column
 
 For a local cluster we need to manually set the external IP address to the IP address of the Kubernetes node (the docker container running Kind in this case): 
 ```execute-1

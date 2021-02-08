@@ -48,8 +48,7 @@ docker run --name k8s-demo-app -p 8080:8080 k8s-demo-app:0.0.1-SNAPSHOT
 
 
 ```execute-2
-$ curl http://localhost:8080; echo
-Hello World
+curl http://localhost:8080
 ```
 
 
