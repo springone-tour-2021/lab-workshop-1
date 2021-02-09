@@ -6,3 +6,4 @@
 ./kustomization.yaml
 ./resources
 ./local-eduk8s-start.sh
+./ryans-blog.md
