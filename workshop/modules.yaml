@@ -23,6 +23,18 @@ modules:
         name: Exposing the Service
     exercises/09-test-loadbalancer:
         name: Testing the Public LoadBalancer
+    exercises/10-best-practice:
+        name: Best Practices
+    exercises/11-add-probes:
+        name: Add Readiness and Liveness Probes
+    exercises/12-graceful-shutdown:
+        name: Graceful Shutdown
+    exercises/13-in-flight-request:
+        name: Handling In Flight Requests
+    exercises/14-update-redeploy:
+        name: Update The Container & Apply The Updated Deployment YAML
+    exercises/15-clean-up:
+        name: Cleaning-up
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

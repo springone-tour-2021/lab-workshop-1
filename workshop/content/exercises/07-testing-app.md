@@ -38,10 +38,10 @@ curl http://localhost:8080
 ```terminal:interrupt-all
 ```
 
-<iframe src="https://giphy.com/embed/msKNSs8rmJ5m" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/day-subreddit-msKNSs8rmJ5m">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/msKNSs8rmJ5m" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 Be sure to stop the `kubectl port-forward` process before moving on
-
-
+```terminal:interrupt-1
+```
 ---
 
