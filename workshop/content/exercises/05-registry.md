@@ -32,7 +32,7 @@ docker push {{ registry_host }}/apps/demo
 ```
 
 
-*   You can now see the image in the registry
+You can now see the image in the registry
 
 ```execute-1
 curl {{ registry_host }}/v2/_catalog

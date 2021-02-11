@@ -7,7 +7,6 @@
 *   With our container build and deployed to a registry you can now run this container on Kubernetes
 
 
-
 ---
 
 
@@ -23,13 +22,11 @@
 
 
 ```execute-1
-cd .. && mkdir k8s
+cd ~ && mkdir k8s
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > k8s/deployment.yaml
 ```
 
-
-
-*   The resulting `deployment.yaml` should look similar to this
+*   The resulting `k8s/deployment.yaml` should look similar to this.
 
 ```
 apiVersion: apps/v1
@@ -75,9 +72,7 @@ kubectl create service clusterip k8s-demo-app --tcp 80:8080 -o yaml --dry-run=cl
 ```
 
 
-
 *   The resulting `service.yaml` should look similar to this
-
 
 ```
 apiVersion: v1
@@ -100,25 +95,16 @@ status:
   loadBalancer: {}
 ```
 
-
-
-
 ---
-
 
 
 ### 
 **Apply The Deployment and Service YAML**
 
 
-
 *   The deployment and service descriptors have been created in the `/k8s` directory
 *   Apply these to get everything running
 *   You can watch as the pods and services get created
-
-
-
-
 
 Apply your manifests to get everything running.
 ```execute-1
@@ -149,6 +135,8 @@ replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 
 Please, terminate the watch process to continue.
 
-```terminal:interrupt-all
+```terminal:interrupt
+session: 1
 ```
+
 ---
