@@ -10,7 +10,7 @@ spec:
   duration: 15m
   url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
-    image: jdk11-environment:*
+    image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
     files: github.com/springone-tour-2021/lab-workshop-1
   session:
     namespaces:
