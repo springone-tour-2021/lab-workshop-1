@@ -12,11 +12,40 @@ modules:
     - exercises/06-deploy-to-k8s
     - exercises/07-testing-app
     - exercises/08-expose-svc
-    - exercises/09-test-loadbalancer
+    - exercises/09-testing-ingress
     - exercises/10-best-practice
     - exercises/11-add-probes
     - exercises/12-graceful-shutdown
     - exercises/13-in-flight-request
     - exercises/14-update-redeploy
     - exercises/15-clean-up
+    - exercises/16-skaffold-intro
+    - exercises/17-dev-test-skaffold
+    - exercises/18-change-controller
+    - exercises/19-cleanup
+    - exercises/20-debug-skaffold
+    - exercises/22-create-launcher
+    - exercises/23-kustomize
+    - exercises/24-gs-kustomize
+    - exercises/25-kutomize.yaml
+    - exercises/26-customize-deployment
+    - exercises/27-run-kustomize
+    - exercises/28-pipe-to-kubectl
+    - exercises/29-clean-up
+    - exercises/30-kustomize-skaffold
+    - exercises/31-test-skaffold-kustomize
+    - exercises/32-externalized-config
+    - exercises/33-configmaps-in-apps
+    - exercises/34-rm-configmap-deployment
+    - exercises/35-configmaps-sb-config
+    - exercises/36-configmap-kustomize
+    - exercises/37-test-new-deploy
+    - exercises/38-service-discovery
+    - exercises/39-deploy-another
+    - exercises/40-mod-kustomize-config
+    - exercises/41-request-svc
+    - exercises/42-test-app
+    - exercises/43-run-petclinic
+    - exercises/44-deploy-petclinic
+    - exercises/45-dissect-petclinic
     - workshop-summary

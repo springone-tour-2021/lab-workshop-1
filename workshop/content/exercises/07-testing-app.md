@@ -38,7 +38,8 @@ curl http://localhost:8080
 
 Be sure to stop the `kubectl port-forward` process before moving on
 
-```terminal:interrupt-all
+```terminal:interrupt
+session: 1
 ```
 
 <iframe src="https://giphy.com/embed/msKNSs8rmJ5m" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>

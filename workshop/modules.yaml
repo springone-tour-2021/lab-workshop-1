@@ -21,8 +21,8 @@ modules:
         name: Testing the App
     exercises/08-expose-svc:
         name: Exposing the Service
-    exercises/09-test-loadbalancer:
-        name: Testing the Public LoadBalancer
+    exercises/09-testing-ingress:
+        name: Testing the Public Ingress
     exercises/10-best-practice:
         name: Best Practices
     exercises/11-add-probes:
@@ -35,6 +35,66 @@ modules:
         name: Update The Container & Apply The Updated Deployment YAML
     exercises/15-clean-up:
         name: Cleaning-up
+    exercises/16-skaffold-intro:
+        name: Skaffold
+    exercises/17-dev-test-skaffold:
+        name: Development with Skaffold
+    exercises/18-change-controller:
+        name: Make Changes to the Controller
+    exercises/19-cleanup:
+        name: Cleaning Everything Up
+    exercises/20-debug-skaffold:
+        name: Debugging with Skaffold
+    exercises/21-remote-debug:
+        name: Setting Up A Remote Debug Configuration in VS Code
+    exercises/22-create-launcher:
+        name: Create a Launcher
+    exercises/23-kustomize:
+        name: Kustomize
+    exercises/24-gs-kustomize:
+        name: Getting Started with Kustomize
+    exercises/25-kustomize.yaml:
+        name: 'kustomize.yaml'
+    exercises/26-customize-deployment:
+        name: Customizeing Our Deployment
+    exercises/27-run-kustomize:
+        name: Running Kustomize
+    exercises/28-pipe-to-kubectl:
+        name: Piping to Kustomize
+    exercises/29-clean-up:
+        name: Clean Up
+    exercises/30-kustomize-skaffold:
+        name: Using Kustomize with Skaffold
+    exercises/31-test-skaffold-kustomize:
+        name: Testing Skaffold + Kustomize
+    exercises/32-externalized-config:
+        name: Externalized Configuration
+    exercises/33-configmaps-in-apps:
+        name: Using ConfigMaps in Our Apps
+    exercises/34-rm-configmap-deployment:
+        name: Removing The Config Map and Reverting The Deployment
+    exercises/35-configmaps-sb-config:
+        name: Config Maps and Spring Boot Application Configuration
+    exercises/36-configmap-kustomize:
+        name: Creating A Config Map With Kustomize
+    exercises/37-test-new-deploy:
+        name: Testing Our New Deployment
+    exercises/38-service-discovery:
+        name: Service Discovery
+    exercises/39-deploy-another:
+        name: Deploying Another App
+    exercises/40-mod-kustomize-config:
+        name: Modify `kustomization.yaml`
+    exercises/41-request-svc:
+        name: Making A Request To The Service
+    exercises/42-test-app:
+        name: Testing the App
+    exercises/43-run-petclinic:
+        name: Making A Request To The Service
+    exercises/44-deploy-petclinic:
+        name: Deploying PetClinic
+    exercises/45-dissect-petclinic:
+        name: Dissecting PetClinic
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

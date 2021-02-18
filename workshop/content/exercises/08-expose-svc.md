@@ -6,9 +6,9 @@
 
 > An Ingress is an API object that defines rules which allow external access to services in a cluster. An Ingress controller fulfills the rules set in the Ingress.
 
-Next, you will go create `k8s/ingress.yaml` so you can access your app externally. 
+Next, you will go create `ingress.yaml` so you can access your app externally. 
 
-Click below to highlight the value that needs to change.
+Click below to create your `ingress.yaml`.
 ```editor:append-lines-to-file
 file: k8s/ingress.yaml
 text: |
@@ -32,7 +32,7 @@ text: |
                     number: 8080
 ```
 
-Now, add your host 
+Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
  sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g k8s/ingress.yaml -i
 ```
