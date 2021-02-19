@@ -32,11 +32,11 @@ text: |
           artifacts:
           - image: YourImage
             buildpacks:
-              builder: docker.io/paketobuildpacks/run:base-cnb
+              builder: docker.io/paketobuildpacks/builder:base
               dependencies:
                 paths:
-                - demo/src
-                - demo/pom.xml
+                - src
+                - pom.xml
         deploy:
           kubectl:
             manifests:

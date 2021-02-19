@@ -4,14 +4,14 @@ metadata:
   name: lab-workshop-1
 spec:
   title: Spring on Kubernetes
-  description: A workshop for Spring on Kubernetes
+  description: A sample workshop using Markdown
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/springone-tour-2021/lab-workshop-1
+  url: https://github.com/everythingeverywhere/lab-st-test
   content:
     image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
-    files: github.com/springone-tour-2021/lab-workshop-1
+    files: github.com/everythingeverywhere/lab-st-test
   session:
     namespaces:
       budget: large
