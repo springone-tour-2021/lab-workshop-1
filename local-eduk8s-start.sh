@@ -20,13 +20,15 @@ kubectl set env deployment/eduk8s-operator -n eduk8s INGRESS_DOMAIN=$IP.nip.io
 kubectl get all -n eduk8s  
 
 # deploy workshop definition
-# kubectl apply -f ./resources/workshop.yaml #local file
-kubectl apply -f https://raw.githubusercontent.com/springone-tour-2021/lab-workshop-1/main/resources/training-portal.yaml
+# kubectl apply -f ./resources/workshop.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/everythingeverywhere/lab-st-test/master/resources/workshop.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/everythingeverywhere/lab-st-test/master/resources/training-portal.yaml
 
 
 # deploy training portal 
-# kubectl apply -f ./resources/training-portal.yaml #local file
-kubectl apply -f https://raw.githubusercontent.com/springone-tour-2021/lab-workshop-1/main/resources/workshop.yaml
+# kubectl apply -f ./resources/training-portal.yaml
 
 # Get trainingportals, will have to 
 kubectl get trainingportal --watch
