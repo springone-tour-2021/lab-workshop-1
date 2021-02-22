@@ -22,7 +22,7 @@
 
 
 ```execute-1
-cd ~ && mkdir k8s
+mkdir k8s
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > k8s/deployment.yaml
 ```
 
