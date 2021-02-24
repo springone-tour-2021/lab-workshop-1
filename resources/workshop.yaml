@@ -8,7 +8,7 @@ spec:
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/everythingeverywhere/lab-st-test
+  url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
     image: jdk11-environment:*
     files: github.com/springone-tour-2021/lab-workshop-1

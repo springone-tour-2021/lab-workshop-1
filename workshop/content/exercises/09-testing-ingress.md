@@ -21,7 +21,7 @@ session: 1
 
 Test your endpoint with your browser or with curl.
 ```execute-2
-curl k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}
+curl k8s-demo-app-{{ session_namespace }}.{{ ingress_domain }}
 ```
 
 
