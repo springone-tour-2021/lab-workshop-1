@@ -2,7 +2,7 @@
 **Add The Readiness Probe**
 
 ```editor:insert-value-into-yaml
-file: k8s/deployment.yaml
+file: ~/demo/k8s/deployment.yaml
 path: spec.template.spec.containers.[0]
 value:
         readinessProbe:
@@ -16,7 +16,7 @@ value:
 **Add The Liveness Probe**
 
 ```editor:insert-value-into-yaml
-file: k8s/deployment.yaml
+file: ~/demo/k8s/deployment.yaml
 path: spec.template.spec.containers.[0]
 value:
         livenessProbe:

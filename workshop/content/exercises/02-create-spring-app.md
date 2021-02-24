@@ -28,7 +28,7 @@ curl https://start.spring.io/starter.tgz -d artifactId=k8s-demo-app -d name=k8s-
 First, add the annonations and @RestController
 
 ```editor:insert-lines-before-line
-file: demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 6
 text: |
     import org.springframework.web.bind.annotation.GetMapping;
@@ -40,12 +40,12 @@ text: |
 
 Now, add your 'Helllo World' rest controller
 ```editor:insert-lines-before-line
-file: demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 17
 text: |
     @GetMapping("/")
 	public String hello() {
-		return "Hello World";
+		return "HelloWorld\n start.spring.io\n";
 	}
     
 ```

@@ -22,8 +22,8 @@
 
 
 ```execute-1
-cd ~ && mkdir k8s
-kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > k8s/deployment.yaml
+mkdir k8s &&
+kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > ~/demo/k8s/deployment.yaml
 ```
 
 *   The resulting `k8s/deployment.yaml` should look similar to this.
@@ -67,7 +67,7 @@ status: {}
 
 
 ```execute-1
-kubectl create service clusterip k8s-demo-app --tcp 80:8080 -o yaml --dry-run=client > k8s/service.yaml
+kubectl create service clusterip k8s-demo-app --tcp 80:8080 -o yaml --dry-run=client > ~/demo/k8s/service.yaml
 
 ```
 
@@ -108,7 +108,7 @@ status:
 
 Apply your manifests to get everything running.
 ```execute-1
-kubectl apply -f ./k8s 
+kubectl apply -f ~/demo/k8s 
 ```
 
 Watch the objects being created.

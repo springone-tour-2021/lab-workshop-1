@@ -35,7 +35,7 @@ docker push {{ registry_host }}/apps/demo
 You can now see the image in the registry
 
 ```execute-1
-curl $REGISTRY_USERNAME:$REGISTRY_PASSWORD@{{ registry_host }}/v2/_catalog
+curl {{ registry_username }}:{{ registry_password }}@{{ registry_host }}/v2/_catalog
 ```
 
 You should see then get a print out like the this.

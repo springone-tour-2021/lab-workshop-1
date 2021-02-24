@@ -1,15 +1,13 @@
 
-### 
-**Update The Container & Apply The Updated Deployment YAML**
 
 Let’s update the `pom.xml` to configure the image name explicitly:
 
 
 ```editor:insert-lines-before-line
-file: demo/pom.xml
+file: ~/demo/pom.xml
 line: 17
 text: |
-	<spring-boot.build-image.imageName>localhost:5000/apps/demo</spring-boot.build-image.imageName>
+	<spring-boot.build-image.imageName>{{ registry_host }}/v2/_catalog</spring-boot.build-image.imageName>
 ```
 
 
@@ -17,19 +15,17 @@ Then we can build and push the changes and re-deploy:
 
 
 ```execute-1
-cd demo &&
 ./mvnw clean spring-boot:build-image
 ```
 
 ```execute-1
-cd ~ &&
 docker push {{ registry_host }}/apps/demo
 ```
 
 
 An updated Pod will be created and started and the old one will be terminated when you re-deploy.
 ```execute-1
-kubectl apply -f ./k8s
+kubectl apply -f ~/demo/k8s
 ```
 
 

@@ -10,7 +10,7 @@ Next, you will go create `ingress.yaml` so you can access your app externally.
 
 Click below to create your `ingress.yaml`.
 ```editor:append-lines-to-file
-file: k8s/ingress.yaml
+file: ~/demo/k8s/ingress.yaml
 text: |
       apiVersion: networking.k8s.io/v1
       kind: Ingress
@@ -34,12 +34,12 @@ text: |
 
 Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
- sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g k8s/ingress.yaml -i
+ sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g ~/demo/k8s/ingress.yaml -i
 ```
 
 Take a peek at your file to verify your host populted.
 ```editor:select-matching-text
-file: k8s/ingress.yaml
+file: ~/demo/k8s/ingress.yaml
 text: "host" 
 ```
 
@@ -47,7 +47,7 @@ text: "host"
 
 Now, apply the `ingress.yaml`, your service, and your Kubernetes deployment.
 ```execute-1
-kubectl apply -f ./k8s
+kubectl apply -f ~/demo/k8s
 ```
 
 ---

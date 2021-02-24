@@ -8,7 +8,7 @@
 *   Open `application.properties` in `/src/main/resources` and add
 
 ```editor:append-lines-to-file
-file: demo/src/main/resources/application.properties
+file: ~/demo/src/main/resources/application.properties
 text: |
         server.shutdown=graceful
 ```

@@ -31,7 +31,11 @@ Spring Boot Actuator adds several other endpoints to our app
 
 
 ```execute-2
-$ curl localhost:8080/actuator | jq .
+curl localhost:8080/actuator | jq .
+```
+
+Your output will be similar to this.
+```
 {
   "_links": {
     "self": {
@@ -52,5 +56,6 @@ $ curl localhost:8080/actuator | jq .
 
 Be sure to stop the Java process before continuing on or else you might get port binding issues since Java is using port `8080`
 
-```terminal:interrupt-all
+```terminal:interrupt
+session: 1
 ```
