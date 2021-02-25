@@ -22,11 +22,6 @@ kubectl get all -n eduk8s
 # deploy workshop definition
 kubectl apply -f ./resources/workshop.yaml
 
-# kubectl apply -f https://raw.githubusercontent.com/everythingeverywhere/lab-st-test/master/resources/workshop.yaml
-
-# kubectl apply -f https://raw.githubusercontent.com/everythingeverywhere/lab-st-test/master/resources/training-portal.yaml
-
-
 # deploy training portal 
 kubectl apply -f ./resources/training-portal.yaml
 

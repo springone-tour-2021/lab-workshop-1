@@ -9,7 +9,7 @@ Skaffold makes some enhacements to our development workflow when using Kubernete
 
 Run the following command to begin developing with Skaffold.
 ```execute-1
-skaffold dev --port-forward --default-repo {{ registry_username }}:{{ registry_password }}@{{ registry_host }}/v2/_catalog
+skaffold dev --port-forward --insecure-registry {{ registry_host }}/apps/demo --default-repo {{ registry_host }}/apps/demo
 ```
 
 ---
@@ -31,9 +31,8 @@ Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> add
 
 *   In this case port `4503` will be forwarded to port `80` of the service
 
-```
-curl localhost:4503; echo
-Hello World
+```execute-2
+curl localhost:80
 ```
 
 ---

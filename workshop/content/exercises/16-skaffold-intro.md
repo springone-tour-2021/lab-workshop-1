@@ -24,7 +24,7 @@ skaffold version
 ```editor:append-lines-to-file
 file: ~/demo/skaffold.yaml
 text: |
-        apiVersion: skaffold/v2beta5
+        apiVersion: skaffold/v2beta12
         kind: Config
         metadata:
           name: k-s-demo-app--
@@ -40,9 +40,9 @@ text: |
         deploy:
           kubectl:
             manifests:
-            - ~/demo/k8s/deployment.yaml
-            - ~/demo/k8s/service.yaml
-            - ~/demo/k8s/ingress.yaml
+            - k8s/deployment.yaml
+            - k8s/service.yaml
+            - k8s/ingress.yaml
 ```
 
 
