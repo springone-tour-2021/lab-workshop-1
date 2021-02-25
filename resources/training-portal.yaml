@@ -9,5 +9,5 @@ spec:
   workshops:
   - name: lab-workshop-1
     capacity: 1
-    expires: 60m
+    expires: 160m
     orphaned: 5m
