@@ -6,11 +6,10 @@
 *   Once you save the file you will notice Skaffold rebuild and redeploy everthing with the new change
 
 
-```
-$ curl localhost:4503; echo
-Hola World
-```
 
+```execute-2
+curl localhost:80
+```
 
 
 

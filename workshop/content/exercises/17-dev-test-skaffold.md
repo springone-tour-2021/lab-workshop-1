@@ -17,19 +17,19 @@ skaffold dev --port-forward --insecure-registry {{ registry_host }}/apps/demo --
 ### 
 **Testing Everything Out**
 
-*   If you are `watch`ing your Kubernetes resources you will see the same resources created as before
+If you are `watch`ing your Kubernetes resources you will see the same resources created as before
 ```execute-2
 watch -n 1 kubectl get all
 ```
 
-*   When running `skaffold dev --port-forward` you will see a line in your console that looks like
+When running `skaffold dev --port-forward` you will see a line in your console that looks like this example.
 
 ```
 Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> address 127.0.0.1 port 4503
 
 ```
 
-*   In this case port `4503` will be forwarded to port `80` of the service
+In this case port `4503` will be forwarded to port `80` of the service
 
 ```execute-2
 curl localhost:80
