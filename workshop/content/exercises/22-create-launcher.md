@@ -49,8 +49,6 @@ The other option is to set up a launcher that attaches to the remote process. Th
 
 ```
 
-
-
 *   Now select the `Debug (Attached)` option from the drop down and click the Run button
 *   This should attach the debugger to the remot port
 

@@ -48,7 +48,7 @@ text: |
 
 Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
- sed s/YourImage/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g skaffold.yaml -i
+ sed s/YourImage/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}\/apps\/demo/g skaffold.yaml -i
 ```
 
 The `builder` is the same one used by Spring Boot when it builds a container from the build plugins (you would see it logged on the console when you build the image). Instead of the `buildpacks` builder you could use the `custom` one (with the same `dependencies`):

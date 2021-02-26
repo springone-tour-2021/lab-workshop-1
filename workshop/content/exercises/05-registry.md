@@ -23,19 +23,23 @@
 
 Maven Build:
 ```execute-1
-./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName={{ registry_host }}/apps/demo
+./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=$REGISTRY_HOST/apps/demo
 ```
 
 Push the container to the local container registry
 ```execute-1
-docker push {{ registry_host }}/apps/demo
+docker push $REGISTRY_HOST/apps/demo
+```
+
+```execute-1
+docker push $REGISTRY_HOST/apps/demo
 ```
 
 
 You can now see the image in the registry
 
 ```execute-1
-curl {{ registry_username }}:{{ registry_password }}@{{ registry_host }}/v2/_catalog
+curl $REGISTRY_USERNAME:$REGISTRY_PASSWORD@$REGISTRY_HOST/v2/_catalog
 ```
 
 You should see then get a print out like the this.

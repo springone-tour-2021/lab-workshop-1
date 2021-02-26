@@ -10,11 +10,15 @@ spec:
   duration: 15m
   url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
-    image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
+    # image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
+    image: jdk11-environment:*
     files: github.com/springone-tour-2021/lab-workshop-1?ref=main
   session:
     namespaces:
       budget: large
+    registry:
+        enabled: true
+        storage: 5Gi
     resources:
       memory: 2Gi
     applications:
@@ -25,8 +29,6 @@ spec:
         enabled: true
         vendor: octant
       editor:
-        enabled: true
-      registry:
         enabled: true
       docker:
         enabled: true

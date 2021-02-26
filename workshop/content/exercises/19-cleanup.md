@@ -1,8 +1,12 @@
 
 ### 
 
-*   Once we are done, if we kill the `skaffold` process, skaffold will remove the deployment and service resources. Just hit `CTRL-C` in the terminal where `skaffold` is running…
+Once we are done, if we kill the `skaffold` process, skaffold will remove the deployment and service resources. Just hit `CTRL-C` in the terminal where `skaffold` is running…
 
+To exit Skaffold in terminal one.
+```terminal:interrupt
+session: 1
+```
 
 ```
 ...

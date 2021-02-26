@@ -22,6 +22,11 @@ If you are `watch`ing your Kubernetes resources you will see the same resources 
 watch -n 1 kubectl get all
 ```
 
+To exit running process in terminal one.
+```terminal:interrupt
+session: 1
+```
+
 When running `skaffold dev --port-forward` you will see a line in your console that looks like this example.
 
 ```

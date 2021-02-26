@@ -1,8 +1,10 @@
 
 ### 
 
-*   Lets imagine we want to deploy our app to a QA environment, but in this environment we want to have two instances of our app running
-*   Create a new directory called `qa` under the `kustomize` directory
+Lets imagine we want to deploy our app to a QA environment, but in this environment we want to have two instances of our app running
+
+Create a new directory called `qa` under the `kustomize` directory
+
 *   Create a new file in `kustomize/qa` called `update-replicas.yaml`, this is where we will provide customizations for our QA environment
 *   Add the following content to `kustomize/qa/update-replicas.yaml`
 
