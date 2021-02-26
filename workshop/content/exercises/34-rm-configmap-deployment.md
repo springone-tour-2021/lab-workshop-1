@@ -3,8 +3,8 @@
 *   To delete the config map run the following command
 
 
-```
-$ kubectl delete configmap log-level
+```execute-1
+kubectl delete configmap log-level
 
 ```
 

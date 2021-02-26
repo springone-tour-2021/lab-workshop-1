@@ -9,7 +9,7 @@
 
 
 ```
-$ skaffold dev --port-forward
+skaffold dev --port-forward
 
 ```
 
@@ -19,7 +19,7 @@ $ skaffold dev --port-forward
 
 
 ```
-$ skaffold dev -p qa --port-forward
+skaffold dev -p qa --port-forward
 ```
 
 

@@ -1,13 +1,16 @@
 
-*   Kustomize offers a way of generating config maps and secrets as part of our customizations
-*   Create a file called `application.yaml` in `kustomize/base` and add the following content
+Kustomize offers a way of generating config maps and secrets as part of our customizations
 
 
-```
-logging:
-  level:
-    org:
-      springframework: INFO
+Create a file called `application.yaml` in `kustomize/base` and add the following content
+
+```editor:append-lines-to-file
+file: ~/demo/kustomize/base/application.yaml
+text: |
+      logging:
+        level:
+          org:
+            springframework: INFO
 
 ```
 

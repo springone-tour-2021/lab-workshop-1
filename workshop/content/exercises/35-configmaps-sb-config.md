@@ -5,8 +5,8 @@
 *   We can do this via `kubectl`
 
 
-```
-$ kubectl create configmap k8s-demo-app-config --from-file ./path/to/application.yaml
+```execute-1
+ubectl create configmap k8s-demo-app-config --from-file ./path/to/application.yaml
 ```
 
 

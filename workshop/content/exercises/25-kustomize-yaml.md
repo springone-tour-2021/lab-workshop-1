@@ -9,12 +9,12 @@
 ```editor:append-lines-to-file
 file: ~/demo/kustomize/base/kustomization.yaml
 text: |
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+        apiVersion: kustomize.config.k8s.io/v1beta1
+        kind: Kustomization
 
-resources:	
-- service.yaml
-- deployment.yaml
+        resources:	
+        - service.yaml
+        - deployment.yaml
 ```
 
 

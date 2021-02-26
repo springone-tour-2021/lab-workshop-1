@@ -14,7 +14,7 @@ mv k8s/* kustomize/base
 
 
 Delete the `k8s` directory
-```
+```execute-1
 rm -Rf k8s
 ```
 

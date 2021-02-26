@@ -16,9 +16,6 @@ spec:
   session:
     namespaces:
       budget: large
-    registry:
-        enabled: true
-        storage: 5Gi
     resources:
       memory: 2Gi
     applications:
@@ -30,5 +27,8 @@ spec:
         vendor: octant
       editor:
         enabled: true
+      registry:
+        enabled: true
+        memory: 2Gi
       docker:
         enabled: true

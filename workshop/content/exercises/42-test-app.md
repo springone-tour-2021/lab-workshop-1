@@ -1,10 +1,9 @@
 
 
-*   Deploy the apps using Skaffold
+Deploy the apps using Skaffold
 
-
-```
-$ skaffold dev --port-forward
+```execute-1
+skaffold dev --port-forward
 
 ```
 
@@ -13,8 +12,12 @@ $ skaffold dev --port-forward
 *   This should deploy both the k8s-demo-app and the name-service app
 
 
+```execute-1
+kubectl get all
 ```
-$ kubectl get all
+
+Your output will be similar to:
+```bsh
 NAME                                             READY   STATUS    RESTARTS   AGE
 pod/k8s-demo-app-5b957cf66d-w7r9d                1/1     Running   0          172m
 pod/k8s-workshop-name-service-79475f456d-4lqgl   1/1     Running   0          173m
@@ -36,8 +39,7 @@ replicaset.apps/k8s-workshop-name-service-79475f456d   1         1         1    
 
 
 
-*   Because we deployed two services and supplied the `-port-forward` flag Skaffold will forward two ports
-
+Because we deployed two services and supplied the `-port-forward` flag Skaffold will forward two ports
 
 ```
 Port forwarding service/k8s-demo-app in namespace user1, remote port 80 -> address 127.0.0.1 port 4503
@@ -51,7 +53,7 @@ Port forwarding service/k8s-workshop-name-service in namespace user1, remote por
 
 
 ```
-$ curl localhost:4504; echo
+curl localhost:4504; echo
 John
 ```
 

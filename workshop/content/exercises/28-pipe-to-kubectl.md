@@ -1,16 +1,16 @@
 
 
-*   We can pipe the output from `kustomize` into `kubectl` in order to use the generated YAML to deploy the app to Kubernetes
+We can pipe the output from `kustomize` into `kubectl` in order to use the generated YAML to deploy the app to Kubernetes
 
+
+```execute-1
+kustomize build kustomize/qa | kubectl apply -f -
 
 ```
-$ kustomize build kustomize/qa | kubectl apply -f -
-
-```
 
 
 
-*   If you are watching the pods in your Kubernetes namespace you will now see two pods created instead of one
+If you are watching the pods in your Kubernetes namespace you will now see two pods created instead of one
 
 
 ```
