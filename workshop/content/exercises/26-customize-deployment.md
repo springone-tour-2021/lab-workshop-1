@@ -16,12 +16,13 @@ mkdir -p kustomize/qa
 ```editor:append-lines-to-file
 file: ~/demo/kustomize/base/kustomization.yaml
 text: |
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: k8s-demo-app
-    spec:
-      replicas: 2
+      apiVersion: kustomize.config.k8s.io/v1beta1
+      kind: Kustomization
+
+      resources:	
+      - service.yaml
+      - deployment.yaml
+      - ingress.yaml
 ```
 
 
@@ -29,15 +30,17 @@ text: |
 *   Create a new file called `kustomization.yaml` in `kustomize/qa` and add the following to it
 
 
-```
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+```editor:append-lines-to-file
+file: ~/demo/kustomize/base/qa/kustomization.yaml
+text: |
+      apiVersion: kustomize.config.k8s.io/v1beta1
+      kind: Kustomization
 
-resources:
-- ../base
+      resources:
+      - ../base
 
-patchesStrategicMerge:
-- update-replicas.yaml
+      patchesStrategicMerge:
+      - update-replicas.yaml
 
 ```
 

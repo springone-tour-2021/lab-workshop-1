@@ -3,9 +3,11 @@
 *   We have a Kustomization that we can use to easily get it up and running
 
 
-```
-$ kustomize build https://github.com/dsyer/docker-services/layers/samples/petclinic?ref=HEAD | kubectl apply -f -
-$ kubectl port-forward service/petclinic-app --address 0.0.0.0 8080:80
+```execute-1
+kustomize build https://github.com/dsyer/docker-services/layers/samples/petclinic?ref=HEAD | kubectl apply -f -
+
+```execute-1
+kubectl port-forward service/petclinic-app --address 0.0.0.0 8080:80
 ```
 
 
