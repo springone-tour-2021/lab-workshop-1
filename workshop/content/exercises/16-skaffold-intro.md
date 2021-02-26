@@ -48,7 +48,7 @@ text: |
 
 Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
- sed s/YourImage/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}\/apps\/demo/g skaffold.yaml -i
+ sed `s/YourImage/k8s-demo-app-{{ session_namespace }}.{{ ingress_domain }}\/apps\/demo/g skaffold.yaml -i
 ```
 
 Take a peek at your file to verify your image populted.
