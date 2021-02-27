@@ -39,6 +39,9 @@ This should attach the debugger to the remote port
 
 
 Be sure to detach the debugger and kill the `skaffold` process before continuing
+```terminal:interrupt
+session: 1
+```
 
 
 
