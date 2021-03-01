@@ -9,7 +9,7 @@ Skaffold makes some enhacements to our development workflow when using Kubernete
 
 Run the following command to begin developing with Skaffold.
 ```execute-1
-skaffold dev --port-forward --insecure-registry {{ registry_host }}/apps/demo --default-repo {{ registry_host }}/apps/demo
+skaffold dev --port-forward
 ```
 
 ---

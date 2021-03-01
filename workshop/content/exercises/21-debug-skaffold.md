@@ -1,8 +1,8 @@
-*   Skaffold also makes it easy to attach a debugger to the container running in Kubernetes
+Skaffold also makes it easy to attach a debugger to the container running in Kubernetes
 
 
 ```execute-1
-skaffold debug --port-forward --insecure-registry {{ registry_host }}/apps/demo --default-repo {{ registry_host }}/apps/demo
+skaffold debug --port-forward 
 ```
 
 ```bsh

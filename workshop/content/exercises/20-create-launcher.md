@@ -1,5 +1,5 @@
 
-The other option is to set up a launcher that attaches to the remote process. This will work for any remote process (doesn’t have to be running in Kubernetes).
+One option to debug is to set up a launcher that attaches to the remote process. This will work for any remote process (doesn’t have to be running in Kubernetes).
 
 
 
