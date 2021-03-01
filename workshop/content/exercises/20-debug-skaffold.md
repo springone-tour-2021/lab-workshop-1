@@ -24,7 +24,12 @@ You can then setup the remote debug configuration in your IDE to attach to the p
 
 If you set a breakpoint where we return `Hola World` from the `hello` method in `K8sDemoApplication.java` and then issue our `curl` command to hit the endpoint you should be able to step through the code.
 
-Example of how adding breakpoint, notice the dot on the return statement (Click image to enlarge).
+```editor:select-matching-text
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+text: "return" 
+```
+
+Example: Adding breakpoint, notice the dot on the return statement (Click image to enlarge).
 ![alt_text](images/image2.png "~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java")
 
 After setting breakpoint curl your endpoint.
