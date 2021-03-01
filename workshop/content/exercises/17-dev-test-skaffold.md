@@ -24,7 +24,7 @@ watch -n 1 kubectl get all
 
 To exit running process in terminal one.
 ```terminal:interrupt
-session: 2
+session: 1
 ```
 
 When running `skaffold dev --port-forward` you will see a line in your console that looks like this example.
