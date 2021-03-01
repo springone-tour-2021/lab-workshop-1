@@ -27,7 +27,7 @@ modules:
     - exercises/22-create-launcher
     - exercises/23-kustomize
     - exercises/24-gs-kustomize
-    - exercises/25-kutomize-yaml
+    - exercises/25-kustomize-yaml
     - exercises/26-customize-deployment
     - exercises/27-run-kustomize
     - exercises/28-pipe-to-kubectl
