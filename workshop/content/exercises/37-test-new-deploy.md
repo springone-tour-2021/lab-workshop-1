@@ -2,6 +2,10 @@
 
 
 *   If you run `$ skaffold dev --port-forward` everything should deploy as normal
+```execute-1
+skaffold dev --port-forward
+```
+
 *   Check that the config map was generated
 
 

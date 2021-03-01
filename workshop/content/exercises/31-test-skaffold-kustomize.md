@@ -8,7 +8,7 @@
 *   If you run your normal `skaffold` commands it will use the deployment configuration from `kustomize/base`
 
 
-```execute1-
+```execute-1
 skaffold dev --port-forward
 
 ```
@@ -25,6 +25,9 @@ skaffold dev -p qa --port-forward
 
 Be sure to kill the `skaffold` process before continuing
 
+```terminal:interrupt
+session: 1
+```
 
 
 ---

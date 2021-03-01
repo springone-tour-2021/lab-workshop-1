@@ -28,7 +28,7 @@ modules:
     - exercises/22-remote-debug
     - exercises/23-kustomize
     - exercises/24-gs-kustomize
-    - exercises/25-kustomize-yamlfile
+    - exercises/25-kustomization-yamlfile
     - exercises/26-customize-deployment
     - exercises/27-run-kustomize
     - exercises/28-pipe-to-kubectl

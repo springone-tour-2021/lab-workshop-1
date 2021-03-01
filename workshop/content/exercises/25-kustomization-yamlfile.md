@@ -1,6 +1,6 @@
 
 ### 
-**kustomize.yaml**
+**kustomization.yaml**
 
 
 
