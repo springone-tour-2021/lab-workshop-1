@@ -7,7 +7,7 @@
 *   In `kustomize/base` create a new file called `kustomize.yaml` and add the following to it.
 
 ```editor:append-lines-to-file
-file: ~/demo/kustomize/base/kustomization.yaml
+file: ~/demo/kustomize/base/kustomize.yaml
 text: |
         apiVersion: kustomize.config.k8s.io/v1beta1
         kind: Kustomization
