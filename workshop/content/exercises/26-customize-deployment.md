@@ -5,7 +5,7 @@ Lets imagine we want to deploy our app to a QA environment, but in this environm
 
 Create a new directory called `qa` under the `kustomize` directory
 ```execute-1
-mkdir -p kustomize/base
+mkdir -p kustomize/qa
 ```
 
 With the following, create a new file in `kustomize/qa` called `update-replicas.yaml`, this is where we will provide customizations for our QA environment
