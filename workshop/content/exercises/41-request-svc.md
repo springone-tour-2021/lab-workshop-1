@@ -1,35 +1,34 @@
 
 *   Modify the `hello` method of `K8sDemoApplication.java` to make a request to the new service
-
+```editor:insert-lines-before-line
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+line: 8
+text: |
+		import org.springframework.web.client.RestTemplate;
 
 ```
-package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication
-@RestController
-public class K8sDemoAppApplication {
 
-	private RestTemplate rest = new RestTemplateBuilder().build();
 
-	public static void main(String[] args) {
-		SpringApplication.run(K8sDemoAppApplication.class, args);
-	}
+```editor:insert-lines-before-line
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+line: 18
+text: |
+		private RestTemplate rest = new RestTemplateBuilder().build();
 
-	@GetMapping("/")
-	public String hello() {
+```
+
+
+```editor:insert-lines-before-line
+file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+line: 18
+text: |
 		String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
 		return "Hola " + name;
-	}
-}
 
 ```
+
 
 
 

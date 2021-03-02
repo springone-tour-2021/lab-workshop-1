@@ -7,8 +7,6 @@ skaffold dev --port-forward
 ```
 
 *   Check that the config map was generated
-
-
 ```execute-1
 kubectl get configmap
 ```

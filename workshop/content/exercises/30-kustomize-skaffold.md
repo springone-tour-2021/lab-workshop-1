@@ -38,8 +38,6 @@ profiles:
 
 ```
 
-
-
 *   Notice now the `deploy` property has been changed from `kubectl` to now use Kustomize
 *   Also notice that we have a new profiles section allowing us to deploy our QA configuration using Skaffold
 

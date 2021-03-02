@@ -7,23 +7,13 @@
 *   To do this we need to change our `deployment.yaml` in `kustomize/base`
 
 
-```
-apiVersion: apps/v1
-kind: Deployment
-...
-spec:
-  ...
-  template:
-    ...
-    spec:
-      containers:
-      - image: localhost:5000/apps/demo
-        name: k8s-demo-app
+```editor:insert-value-into-yaml
+file: ~/exercises/deployment.yaml
+path: spec.template.spec.containers
+value:
         envFrom:
           - configMapRef:
               name: log-level
-        ...
-
 ```
 
 

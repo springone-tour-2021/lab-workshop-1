@@ -19,11 +19,13 @@ text: |
 *   We can now tell Kustomize to generate a config map from this file, in `kustomize/base/kustomization.yaml` by adding the following snippet to the end of the file
 
 
-```
-configMapGenerator:
-  - name: k8s-demo-app-config
-    files:
-      - application.yaml
+```editor:append-lines-to-file
+file: ~/demo/kustomize/base/kustomization.yaml
+text: |
+      configMapGenerator:
+        - name: k8s-demo-app-config
+          files:
+            - application.yaml
 
 ```
 
