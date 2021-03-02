@@ -54,7 +54,7 @@ modules:
     exercises/24-gs-kustomize:
         name: Getting Started with Kustomize
     exercises/25-kustomization-yamlfile:
-        name: 'kustomize.yaml'
+        name: 'kustomization.yaml'
     exercises/26-customize-deployment:
         name: Customizing Our Deployment
     exercises/27-run-kustomize:
