@@ -52,9 +52,8 @@ Port forwarding service/k8s-workshop-name-service in namespace user1, remote por
 *   Test the name service
 
 
-```
-curl localhost:4504; echo
-John
+```execute-2
+curl localhost:4504
 ```
 
 
@@ -65,18 +64,20 @@ Hitting the service multiple times will return a different name
 *   Test the k8s-demo-app which should now make a request to the name-service
 
 
-```
-$ curl localhost:4503; echo
-Hola John
+```execute-2
+curl localhost:4504
 ```
 
 
 Making multiple requests should result in different names coming from the name-service
-
+```execute-2
+curl localhost:4504
+```
 
 
 *   Stop the Skaffold process to clean everything up before moving to the next step
-
+```terminal:interrupt-all
+```
 
 
 ---

@@ -1,5 +1,5 @@
 
-*   Modify the `hello` method of `K8sDemoApplication.java` to make a request to the new service
+Modify the `hello` method of `K8sDemoApplication.java` to make a request to the new service
 ```editor:insert-lines-before-line
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 8
@@ -13,7 +13,7 @@ text: |
 
 ```editor:insert-lines-before-line
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
-line: 18
+line: 13
 text: |
 		private RestTemplate rest = new RestTemplateBuilder().build();
 
@@ -22,7 +22,7 @@ text: |
 
 ```editor:insert-lines-before-line
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
-line: 18
+line: 22
 text: |
 		String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
 		return "Hola " + name;
