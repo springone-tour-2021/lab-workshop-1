@@ -18,11 +18,8 @@ Click the `create launch.json file` like the following picture.
 *   The IDE will create a default launch configuration for the current file and for `K8sDemoAppApplication`
 *   Add another configuration for remote debugging
 
-
-```editor:insert-lines-before-line
-file: ~/.vscode/launch.json
-line: 7
-text: |
+Copy and paste into youor launch.json above the first json entry.
+```workshop:copy
         {
             "type": "java",
             "name": "Debug (Attach)",
