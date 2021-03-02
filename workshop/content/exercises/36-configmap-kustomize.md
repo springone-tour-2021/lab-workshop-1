@@ -73,7 +73,7 @@ value:
 Mount the volume.
 ```editor:insert-value-into-yaml
 file: ~/demo/kustomize/base/deployment.yaml
-path: spec.template.spec.containers
+path: spec.template.spec.containers.[0]
 value:
       volumeMounts:
         - name: config-volume
