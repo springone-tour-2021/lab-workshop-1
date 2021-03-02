@@ -1,3 +1,8 @@
+Delete your previous request in `K8sDemoAppApplication.java`
+```execute-1
+ sed -i '19d' ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
+```
+
 
 Modify the `hello` method of `K8sDemoApplication.java` to make a request to the new service
 ```editor:insert-lines-before-line
