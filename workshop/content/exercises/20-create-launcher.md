@@ -2,10 +2,13 @@
 One option to debug is to set up a launcher that attaches to the remote process. This will work for any remote process (doesn’t have to be running in Kubernetes).
 
 
+```dashboard:open-dashboard
+name: Editor
+```
 
-*   On the left hand side of the IDE tab, click the Run/Debug icon
-*   Click the `create launch.json file`
+On the left hand side of the IDE tab, click the Run/Debug icon
 
+Click the `create launch.json file` like the following picture.
 
 ![alt_text](images/image4.png "image_tooltip")
 
