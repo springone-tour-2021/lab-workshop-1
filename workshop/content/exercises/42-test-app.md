@@ -65,7 +65,7 @@ Hitting the service multiple times will return a different name
 
 
 ```execute-2
-curl localhost:4504
+curl localhost:80
 ```
 
 

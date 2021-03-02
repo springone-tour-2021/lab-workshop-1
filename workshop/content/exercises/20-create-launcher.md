@@ -3,7 +3,7 @@ One option to debug is to set up a launcher that attaches to the remote process.
 
 
 ```dashboard:open-dashboard
-name: editor
+name: Editor
 ```
 
 On the left hand side of the IDE tab, click the Run/Debug icon
@@ -20,15 +20,14 @@ Click the `create launch.json file` like the following picture.
 
 Copy and paste into youor launch.json above the first json entry.
 ```workshop:copy
-text:
-        {
-            "type": "java",
-            "name": "Debug (Attach)",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": 5005
-        },
-
+text: 
+{
+    "type": "java",
+    "name": "Debug (Attach)",
+    "request": "attach",
+    "hostName": "localhost",
+    "port": 5005
+},
 ```
 
 Now select the `Debug (Attached)` option from the drop down and click the Run button

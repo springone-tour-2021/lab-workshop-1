@@ -9,7 +9,7 @@
 *   Add the `envFrom` properties above which reference our config map `log-level`
 ```editor:insert-value-into-yaml
 file: ~/demo/kustomize/base/deployment.yaml
-path: spec.template.spec.containers
+path: spec.template.spec.containers.[0]
 value:
       envFrom:
         - configMapRef:
