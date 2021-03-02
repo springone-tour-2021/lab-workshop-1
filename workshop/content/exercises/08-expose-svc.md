@@ -37,13 +37,11 @@ Now, source your host from your lab environment and add to your `ingress.yaml`. 
  sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g ~/demo/k8s/ingress.yaml -i
 ```
 
-Take a peek at your file to verify your host populted.
+Take a peek at your file to verify your host populated.
 ```editor:select-matching-text
 file: ~/demo/k8s/ingress.yaml
 text: "host" 
 ```
-
-*   
 
 Now, apply the `ingress.yaml`, your service, and your Kubernetes deployment.
 ```execute-1
