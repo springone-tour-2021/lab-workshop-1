@@ -12,7 +12,7 @@ rm skaffold.yaml
 
 Change your `skaffold.yaml` to the following.
 ```editor:append-lines-to-file
-file: ~/exercises/sample.txt
+file: ~/demo/skaffold.yaml
 text: |
 apiVersion: skaffold/v2beta5
 kind: Config

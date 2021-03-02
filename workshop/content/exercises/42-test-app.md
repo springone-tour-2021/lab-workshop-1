@@ -12,7 +12,7 @@ skaffold dev --port-forward
 *   This should deploy both the k8s-demo-app and the name-service app
 
 
-```execute-1
+```execute-2
 kubectl get all
 ```
 
