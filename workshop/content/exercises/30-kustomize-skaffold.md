@@ -12,29 +12,29 @@ rm skaffold.yaml
 
 Change your `skaffold.yaml` to the following.
 ```editor:append-lines-to-file
-file: ~/exercises/sample.txt
+file: ~/demo/skaffold.yaml
 text: |
-apiVersion: skaffold/v2beta5
-kind: Config
-metadata:
-  name: k-s-demo-app
-build:
-  artifacts:
-  - image: {{ registry_host }}/apps/demo
-    buildpacks:
-      builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
-      dependencies:
-        paths:
-          - src
-          - pom.xml
-deploy:
-  kustomize:
-    paths: ["kustomize/base"]
-profiles:
-  - name: qa
-    deploy:
-      kustomize:
-        paths: ["kustomize/qa"]
+      apiVersion: skaffold/v2beta5
+      kind: Config
+      metadata:
+        name: k-s-demo-app
+      build:
+        artifacts:
+        - image: {{ registry_host }}/apps/demo
+          buildpacks:
+            builder: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
+            dependencies:
+              paths:
+                - src
+                - pom.xml
+      deploy:
+        kustomize:
+          paths: ["kustomize/base"]
+      profiles:
+        - name: qa
+          deploy:
+            kustomize:
+              paths: ["kustomize/qa"]
 
 ```
 

@@ -8,7 +8,7 @@
 
 
 ```editor:insert-value-into-yaml
-file: ~/exercises/deployment.yaml
+file: ~/kustomize/base/deployment.yaml
 path: spec.template.spec.containers
 value:
         envFrom:

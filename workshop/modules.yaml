@@ -90,7 +90,7 @@ modules:
     exercises/42-test-app:
         name: Testing the App
     exercises/43-run-petclinic:
-        name: Making A Request To The Service
+        name: Running The PetClinic App
     exercises/44-deploy-petclinic:
         name: Deploying PetClinic
     exercises/45-dissect-petclinic:

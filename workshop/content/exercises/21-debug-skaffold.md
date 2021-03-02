@@ -37,7 +37,3 @@ After setting breakpoint curl your endpoint.
 curl localhost:80
 ```
 
-To exit Skaffold in terminal one.
-```terminal:interrupt
-session: 1
-```

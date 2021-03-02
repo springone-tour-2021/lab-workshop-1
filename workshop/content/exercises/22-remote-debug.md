@@ -8,3 +8,7 @@ There are two options that work in VS Code locally as well as in the IDE in the 
 
 ![alt_text](images/image3.jpg "image_tooltip")
 
+To exit Skaffold in terminal one.
+```terminal:interrupt
+session: 1
+```
