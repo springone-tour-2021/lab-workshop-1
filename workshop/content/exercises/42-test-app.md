@@ -75,7 +75,7 @@ curl localhost:80
 ```
 
 
-*   Stop the Skaffold process to clean everything up before moving to the next step
+Stop the Skaffold process to clean everything up before moving to the next step
 ```terminal:interrupt-all
 ```
 

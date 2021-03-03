@@ -14,7 +14,7 @@ kubectl port-forward service/petclinic-app --address 0.0.0.0 8080:80
 The above `kustomize build` command may take some time to complete
 
 Head to `http://localhost:8080` 
-```execute-1
+```execute-2
 http://localhost:8080
 ```
 
