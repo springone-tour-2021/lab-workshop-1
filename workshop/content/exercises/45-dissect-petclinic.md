@@ -37,11 +37,4 @@ configMapGenerator:
 
 
 
----
 
-
-Published on **[ HackMD](https://hackmd.io/)**
-
- 9355
-
-[Like3](https://hackmd.io/@ryanjbaxter/spring-on-k8s-workshop#) [Bookmark](https://hackmd.io/@ryanjbaxter/spring-on-k8s-workshop#) [Subscribe](https://hackmd.io/@ryanjbaxter/spring-on-k8s-workshop#)
