@@ -28,7 +28,7 @@ configMapGenerator:
 
 
 
-*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/dsyer/docker-services` and look at `layers/samples/petclinckustomization.yaml`.
+*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/dsyer/docker-services` and look at `layers/samples/petclinc/kustomization.yaml`.
 
 Clone the repository for the `kustomization.yaml`.
 ```execute-2
@@ -38,7 +38,7 @@ git clone https://github.com/dsyer/docker-services
 Look at `~/docker-services/layers/samples/petclinic/kustomization.yaml`.
 ```editor:select-matching-text
 file: ~/docker-services/layers/samples/petclinic/kustomization.yaml
-text: "image" 
+text: "base" 
 ```
 
 
