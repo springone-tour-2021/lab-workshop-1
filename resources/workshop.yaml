@@ -16,10 +16,7 @@ spec:
     namespaces:
       budget: large
     resources:
-      memory: 2Gi
-    ingresses:
-    - name: app
-      port: 8080
+      memory: 550Mi
     applications:
       terminal:
         enabled: true
