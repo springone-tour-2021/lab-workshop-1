@@ -35,6 +35,8 @@ If you query the registry you should now see the image
 
 ```execute-1
 curl $REGISTRY_USERNAME:$REGISTRY_PASSWORD@$REGISTRY_HOST/v2/_catalog
+```
+```bsh
 {"repositories":["apps/demo"]}
 ```
 ---
