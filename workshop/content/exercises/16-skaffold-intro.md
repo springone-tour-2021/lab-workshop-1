@@ -5,7 +5,7 @@
 *   Provides the building blocks for a CI/CD process
 
 
-To check your version of Skaffold.
+Confirm Skaffold is installed by running the following command
 ```execute-1
 skaffold version
 ```
@@ -18,7 +18,7 @@ skaffold version
 
 
 *   Skaffold is configured using…you guessed it…another YAML file
-*   We create a YAML file `skaffold.yaml` in the root of the project
+*   Create a YAML file `skaffold.yaml` in the root of the project
 
 
 ```editor:append-lines-to-file
@@ -46,12 +46,13 @@ text: |
 ```
 
 
-Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
+We need to replace the image `YourImage` with the correct image located in our repository in the above `skaffold.yaml` file.
+To do this execute the following `sed` command. 
 ```execute-1
  sed "s/YourImage/{{ registry_host }}\/apps\/demo/g" skaffold.yaml -i
 ```
 
-Take a peek at your file to verify your image populted.
+Take a peek at your file to verify your `image` populated correctly.
 ```editor:select-matching-text
 file: ~/demo/skaffold.yaml
 text: "image" 

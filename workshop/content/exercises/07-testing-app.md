@@ -16,7 +16,7 @@ service/k8s-demo-app   ClusterIP   10.100.200.243   <none>        80/TCP    68m
 
 ```
 
-*   To access the app we can use `kubectl port-forward`
+*   To access the app we can use `kubectl port-forward` to forward requests on port `8080` locally to port `80` on the service running in Kubernetes
 
 
 ```execute-1
