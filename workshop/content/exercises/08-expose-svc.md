@@ -2,11 +2,11 @@
 ### 
 **Exposing The Service**
 
-*   If we want to expose the service publically we can use an Ingress.
+*   If we want to expose the service outside of the cluster we can use an Ingress.
 
 > An Ingress is an API object that defines rules which allow external access to services in a cluster. An Ingress controller fulfills the rules set in the Ingress.
 
-Next, you will go create `ingress.yaml` so you can access your app externally. 
+Next, you will go create `ingress.yaml` so you can access your app outside of the clister. 
 
 Click below to create your `ingress.yaml`.
 ```editor:append-lines-to-file
@@ -32,18 +32,18 @@ text: |
                     number: 80
 ```
 
-Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).
+Now, source your host from your lab environment and add it to your `ingress.yaml`. (This is not necessary outside of this lab).
 ```execute-1
  sed s/YourHost/k8s-demo-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g ~/demo/k8s/ingress.yaml -i
 ```
 
-Take a peek at your file to verify your host populated.
+Take a peek at your file to verify your host populated correctly, it should no longer say `YourHost`.
 ```editor:select-matching-text
 file: ~/demo/k8s/ingress.yaml
 text: "host" 
 ```
 
-Now, apply the `ingress.yaml`, your service, and your Kubernetes deployment.
+Now, apply the `ingress.yaml`.
 ```execute-1
 kubectl apply -f ~/demo/k8s
 ```

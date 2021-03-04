@@ -4,7 +4,7 @@
 
 
 
-*   With our container build and deployed to a registry you can now run this container on Kubernetes
+*   With our container built and deployed to a registry you can now run this container on Kubernetes
 
 
 ---
@@ -16,13 +16,19 @@
 
 
 *   Kubernetes uses YAML files to provide a way of describing how the app will be deployed to the platform
-*   You can write these by hand using the Kubernetes documentation as a reference
-*   Or you can have Kubernetes generate it for you using kubectl
+*   You can write these by hand using the [Kubernetes documentation](https://kubernetes.io/docs/home/) as a reference
+*   Or you can have Kubernetes generate it for you using `kubectl`
 *   The `--dry-run` flag allows us to generate the YAML without actually deploying anything to Kubernetes
 
+Lets create a directory to put the files we will need to deploy our application to Kubernetes
 
 ```execute-1
-mkdir k8s &&
+mkdir k8s
+```
+
+The first file we need is a deployment descriptor.  Execute the following command to create the file
+
+```execute-1
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > ~/demo/k8s/deployment.yaml
 ```
 
@@ -106,12 +112,12 @@ status:
 *   Apply these to get everything running
 *   You can watch as the pods and services get created
 
-Apply your manifests to get everything running.
+To apply your manifest files and get the app running, run the following command
 ```execute-1
 kubectl apply -f ~/demo/k8s 
 ```
 
-Watch the objects being created.
+Execute the following `watch` command to see the deployment progress in Kubernetes
 ```execute-1
 watch -n 1 kubectl get all
 ```
@@ -133,7 +139,7 @@ replicaset.apps/k8s-demo-app-d6dd4c4d4   1         1         1       68m
 
 > `watch` is a useful command line tool that you can install on [Linux](https://www.2daygeek.com/linux-watch-command-to-monitor-a-command/) and [OSX](https://osxdaily.com/2010/08/22/install-watch-command-on-os-x/). All it does is continuously execute the command you pass it. You can just run the `kubectl` command specified after the `watch` command but the output will be static as opposed to updating constantly.
 
-Please, terminate the watch process to continue.
+Terminate the `watch` process before to continuing.
 
 ```terminal:interrupt
 session: 1

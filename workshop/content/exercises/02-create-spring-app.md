@@ -1,14 +1,9 @@
 ---
 ## 
-**What You Will Do**
+**Getting Started**
 
-*   Create a basic Spring Boot app
-*   Build a Docker image for the app
-*   Push the app to a Docker repo
-*   Create deployment and service descriptors for Kubernetes
-*   Deploy and run the app on Kubernetes
-*   External configuration and service discovery
-*   Deploy the Spring PetClinic App with MySQL
+First we will create a directory for our app and use [start.spring.io](http://start.spring.io) to create a basic Spring
+Boot application.
 
 ---
 
@@ -25,7 +20,7 @@ curl https://start.spring.io/starter.tgz -d artifactId=k8s-demo-app -d name=k8s-
 
 **Modify K8sDemoApplication.java and create your Rest  controller**
 
-First, add the annonations and @RestController
+First, add the annotations and @RestController
 
 ```editor:insert-lines-before-line
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java

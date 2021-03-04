@@ -9,7 +9,7 @@
 
 
 
-*   Spring Boot 2.3.x can build a container for you without the need for any additional plugins or files
+*   Spring Boot 2.3.x and newer can build a container for you without the need for any additional plugins or files
 *   To do this use the Spring Boot Build plugin goal `build-image`
 
 
@@ -54,7 +54,7 @@ curl http://localhost:8080
 ```
 
 
-Be sure to stop the docker container before continuing. You can stop the container and remove it by running 
+Be sure to stop the Docker container before continuing. You can stop the container and remove it by running 
 ```execute-2
 docker rm -f k8s-demo-app 
 ```

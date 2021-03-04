@@ -1,13 +1,12 @@
 
-Skaffold makes some enhacements to our development workflow when using Kubernetes
-* Skaffold will
-    *   Build the app and create the container (buildpacks)
-    *   Push the container to the registry (Docker)
-    *   Apply the deployment and service YAMLs
-    *   Stream the logs from the Pod to your terminal
-    *   Automatically setup port forwarding
+Skaffold makes some enhancements to our development workflow when using Kubernetes
+*   Build the app and create the container (buildpacks)
+*   Push the container to the registry (Docker)
+*   Apply the deployment and service YAMLs
+*   Stream the logs from the Pod to your terminal
+*   Automatically setup port forwarding
 
-Run the following command to begin developing with Skaffold.
+Run the following command to have Skaffold build and deploy our application to Kubernetes.
 ```execute-1
 skaffold dev --port-forward
 ```
@@ -17,17 +16,17 @@ skaffold dev --port-forward
 ### 
 **Testing Everything Out**
 
-If you are `watch`ing your Kubernetes resources you will see the same resources created as before
+If you use `watch` to view your Kubernetes resources you will see the same resources created as before
 ```execute-2
 watch -n 1 kubectl get all
 ```
 
-To exit the watch command
+After the resources are created you can stop the `watch` command.
 ```terminal:interrupt
 session: 2
 ```
 
-When running `skaffold dev --port-forward` you will see a line in your console that looks like this example.
+When running `skaffold dev --port-forward` you will see a line in your console that looks like this
 
 ```
 Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> address 127.0.0.1 port 4503
