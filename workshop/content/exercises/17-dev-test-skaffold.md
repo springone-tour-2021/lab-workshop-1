@@ -35,6 +35,7 @@ Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> add
 
 In this case port `4503` will be forwarded to port `80` of the service
 
+> NOTE: Your port may be different from `4503` please verify with the output from `skaffold dev --port-forward` and substitute your correct port if needed.
 ```execute-2
 curl localhost:4503
 ```

@@ -8,7 +8,7 @@ lab environment a host name will also be provided.  Use the following command to
 kubectl get ingress k8s-demo-app -w
 ```
 
-You should see something like this, wait the address field shows your new IP.
+Please wait for the address field to show your new IP before continuing. You should see something like this.
 ```
 NAME           CLASS    HOSTS                                                   ADDRESS        PORTS   AGE
 k8s-demo-app   <none>   k8s-demo-app-lab-st-test-w01-s001.192.168.64.3.nip.io   192.168.64.3   80      6m27s
