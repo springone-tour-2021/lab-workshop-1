@@ -21,13 +21,13 @@ Click the `create launch.json file` like the following picture.
 Copy and paste into youor launch.json above the first json entry.
 ```workshop:copy
 text: |-
-{
-    "type": "java",
-    "name": "Debug (Attach)",
-    "request": "attach",
-    "hostName": "localhost",
-    "port": 5005
-},
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
+        },
 ```
 
 Now select the `Debug (Attached)` option from the drop down and click the Run button
