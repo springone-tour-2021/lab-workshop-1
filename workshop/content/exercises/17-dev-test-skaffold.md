@@ -22,9 +22,9 @@ If you are `watch`ing your Kubernetes resources you will see the same resources 
 watch -n 1 kubectl get all
 ```
 
-To exit running process in terminal one.
+To exit the watch command
 ```terminal:interrupt
-session: 1
+session: 2
 ```
 
 When running `skaffold dev --port-forward` you will see a line in your console that looks like this example.
@@ -37,7 +37,7 @@ Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> add
 In this case port `4503` will be forwarded to port `80` of the service
 
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 ---

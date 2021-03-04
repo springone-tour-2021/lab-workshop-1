@@ -19,6 +19,7 @@ spec:
       memory: 2Gi
     ingresses:
     - name: app
+      port: 8080
     applications:
       terminal:
         enabled: true

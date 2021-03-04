@@ -29,7 +29,7 @@ text: |
                 service:
                   name: k8s-demo-app
                   port: 
-                    number: 8080
+                    number: 80
 ```
 
 Now, source your host from your lab environment and add to your `ingress.yaml`. (This is not necessary outside of this lab).

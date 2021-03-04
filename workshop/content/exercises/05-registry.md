@@ -39,12 +39,17 @@ docker push $REGISTRY_HOST/apps/demo
 You can now see the image in the registry
 
 ```execute-1
-curl $REGISTRY_USERNAME:$REGISTRY_PASSWORD@$REGISTRY_HOST/v2/_catalog
+skopeo list-tags docker://$REGISTRY_HOST/apps/demo
 ```
 
 You should see then get a print out like the this.
 ```
-{"repositories":["apps/demo"]}
+{
+    "Repository": "lab-workshop-1-w01-s001-registry.192.168.64.2.nip.io/apps/demo",
+    "Tags": [
+        "latest"
+    ]
+}
 ```
 
 ---

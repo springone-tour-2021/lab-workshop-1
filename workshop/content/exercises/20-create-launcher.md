@@ -20,7 +20,7 @@ Click the `create launch.json file` like the following picture.
 
 Copy and paste into youor launch.json above the first json entry.
 ```workshop:copy
-text: 
+text: |-
 {
     "type": "java",
     "name": "Debug (Attach)",
