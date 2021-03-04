@@ -23,8 +23,8 @@ modules:
     - exercises/17-dev-test-skaffold
     - exercises/18-change-controller
     - exercises/19-cleanup
-    - exercises/20-create-launcher
-    - exercises/21-debug-skaffold
+    - exercises/20-debug-skaffold
+    - exercises/21-create-launcher
     - exercises/22-remote-debug
     - exercises/23-kustomize
     - exercises/24-gs-kustomize
