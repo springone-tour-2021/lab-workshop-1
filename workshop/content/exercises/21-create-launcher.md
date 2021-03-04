@@ -18,16 +18,16 @@ Click the `create launch.json file` like the following picture.
 *   The IDE will create a default launch configuration for the current file and for `K8sDemoAppApplication`
 *   Add another configuration for remote debugging
 
-Copy and paste into youor launch.json above the first json entry.
+Copy and paste into your `launch.json` above the first json entry.
 ```workshop:copy
-text: 
-{
-    "type": "java",
-    "name": "Debug (Attach)",
-    "request": "attach",
-    "hostName": "localhost",
-    "port": 5005
-},
+text: |-
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
+        },
 ```
 
 Now select the `Debug (Attached)` option from the drop down and click the Run button
