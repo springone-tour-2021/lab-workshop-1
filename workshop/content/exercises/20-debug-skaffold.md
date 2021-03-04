@@ -20,9 +20,7 @@ The `debug` command results in two ports being forwarded
 * The http port, `4503` in the above example
 * The remote debug port `5005` in the above example
 
-You can then setup the remote debug configuration in your IDE to attach to the process and set breakpoints just like you would if the app was running locally
-
-If you set a breakpoint where we return `Hola World` from the `hello` method in `K8sDemoApplication.java` and then issue our `curl` command to hit the endpoint you should be able to step through the code.
+Set a breakpoint where we return `Hola World` from the `hello` method in `K8sDemoApplication.java`
 
 ```editor:select-matching-text
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
