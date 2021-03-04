@@ -16,9 +16,7 @@ spec:
     namespaces:
       budget: large
     resources:
-      memory: 2Gi
-    ingresses:
-    - name: app
+      memory: 550Mi
     applications:
       terminal:
         enabled: true

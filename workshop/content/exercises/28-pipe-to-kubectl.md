@@ -11,7 +11,14 @@ kustomize build kustomize/qa | kubectl apply -f -
 
 
 If you are watching the pods in your Kubernetes namespace you will now see two pods created instead of one
+```execute-2
+watch -n 1 kubectl get all
+```
 
+To exit the watch command
+```terminal:interrupt
+session: 2
+```
 
 ```
 Every 1.0s: kubectl get all                                 Ryans-MacBook-Pro.local: Mon Feb  3 12:00:04 2020

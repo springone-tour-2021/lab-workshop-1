@@ -13,7 +13,7 @@ Once you save the file you will notice Skaffold rebuild and redeploy everything 
 
 Execute the following command and notice it now returns `Hola World`.
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 

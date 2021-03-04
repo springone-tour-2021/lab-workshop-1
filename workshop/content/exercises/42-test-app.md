@@ -67,13 +67,13 @@ Hitting the service multiple times will return a different name
 
 
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 
 Making multiple requests should result in different names coming from the name-service
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 

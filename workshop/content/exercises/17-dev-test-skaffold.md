@@ -36,7 +36,7 @@ Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> add
 In this case port `4503` will be forwarded to port `80` of the service
 
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 ---
