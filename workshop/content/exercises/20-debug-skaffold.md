@@ -30,8 +30,3 @@ text: "return"
 Example: Adding breakpoint, notice the dot on the return statement (Click image to enlarge).
 ![alt_text](images/image2.png "~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java")
 
-After setting breakpoint curl your endpoint.
-```execute-2
-curl localhost:80
-```
-
