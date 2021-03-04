@@ -5,7 +5,7 @@
     *   Spring Caching
     *   Spring WebMVC
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/petclinic.jpeg "image_tooltip")
 
 
 

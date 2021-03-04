@@ -56,7 +56,7 @@ By default `kustomize` generates a random name suffix for the `ConfigMap`. Kusto
 
 
 
-*   Now edit `deployment.yaml` in `kustomize/base` to have kubernetes create a volume for that config map and mount that volume in the container
+Now edit `deployment.yaml` in `kustomize/base` to have kubernetes create a volume for that config map and mount that volume in the container
 
 Create the volume.
 ```editor:insert-value-into-yaml
@@ -73,11 +73,11 @@ value:
 Mount the volume.
 ```editor:insert-value-into-yaml
 file: ~/demo/kustomize/base/deployment.yaml
-path: spec.template.spec.containers
+path: spec.template.spec.containers.[0]
 value:
-        volumeMounts:
-          - name: config-volume
-            mountPath: /workspace/config
+      volumeMounts:
+        - name: config-volume
+          mountPath: /workspace/config
 ```
 
 *   In the above `deployment.yaml` we are creating a volume named `config-volume` from the config map named `k8s-demo-app-config`
