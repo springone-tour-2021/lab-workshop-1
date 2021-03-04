@@ -43,10 +43,10 @@ modules:
         name: Make Changes to the Controller
     exercises/19-cleanup:
         name: Cleaning Everything Up
-    exercises/20-create-launcher:
-        name: Create a Launcher    
-    exercises/21-debug-skaffold:
+    exercises/20-debug-skaffold:
         name: Debugging with Skaffold
+    exercises/21-create-launcher:
+        name: Create a Launcher
     exercises/22-remote-debug:
         name: Setting Up A Remote Debug Configuration in VS Code
     exercises/23-kustomize:
