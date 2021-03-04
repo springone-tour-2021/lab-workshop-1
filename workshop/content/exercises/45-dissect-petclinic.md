@@ -28,7 +28,20 @@ configMapGenerator:
 
 
 
-*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/dsyer/docker-services` and look at `layers/samples`.
+*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/dsyer/docker-services` and look at `layers/samples/petclinckustomization.yaml`.
+
+Clone the repository for the `kustomization.yaml`.
+```execute-2
+git clone https://github.com/dsyer/docker-services
+```
+
+Look at `~/docker-services/layers/samples/petclinic/kustomization.yaml`.
+```editor:select-matching-text
+file: ~/docker-services/layers/samples/petclinic/kustomization.yaml
+text: "image" 
+```
+
+
 *   Important features:
     *   `base`: a generic `Deployment` and `Service` with a `Pod` listening on port 8080
     *   `mysql`: a local MySQL `Deployment` and `Service`. Needs a `PersistentVolume` so only works on Kubernetes clusters that have a default volume provider

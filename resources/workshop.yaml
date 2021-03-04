@@ -17,6 +17,8 @@ spec:
       budget: large
     resources:
       memory: 2Gi
+    ingresses:
+    - name: app
     applications:
       terminal:
         enabled: true
