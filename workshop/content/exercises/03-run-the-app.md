@@ -2,7 +2,7 @@
 ## 
 **Run The App**
 
-In a terminal window run, the app will start on port `8080`.
+In a terminal window run the following command.  The application will start on port `8080`.
 
 ```execute-1
 ./mvnw spring-boot:run
@@ -27,7 +27,8 @@ curl http://localhost:8080
 ## 
 **Test Spring Boot Actuator**
 
-Spring Boot Actuator adds several other endpoints to our app
+[Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html) adds several other endpoints to our app.
+By default Spring Boot will expose a `health` and info `endpoint`.
 
 
 ```execute-2

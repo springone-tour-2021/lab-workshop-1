@@ -11,7 +11,7 @@ text: |
 ```
 
 
-Then we can build and push the changes and re-deploy:
+Then we can build and push a new image to our repository:
 
 
 ```execute-1
@@ -23,14 +23,13 @@ docker push {{ registry_host }}/apps/demo
 ```
 
 
-An updated Pod will be created and started and the old one will be terminated when you re-deploy.
+When we apply our resources again the old container will be terminated and a new one will be deployed with the new changes.
 ```execute-1
 kubectl apply -f ~/demo/k8s
 ```
 
 
-
-To see all the Kubernetes resources you will be able to see this happen in real time
+You can run the following command to watch Kubernetes terminate the old container and redeploy a new one in real time.
 ```execute-1
 watch -n 1 kubectl get all
 ```

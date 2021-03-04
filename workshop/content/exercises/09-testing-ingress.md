@@ -1,5 +1,6 @@
 
-In a Cloud environment (Google, Amazon, Azure etc.), Kubernetes will assign the service an external ip
+In a Cloud environment (Google, Amazon, Azure etc.), Kubernetes will assign the service an external IP.  In this
+lab environment a host name will also be provided.  Use the following command to view the host and IP address.
 
 > The `-w` option of `kubectl` lets you watch a single Kubernetes resource.
 
@@ -7,7 +8,7 @@ In a Cloud environment (Google, Amazon, Azure etc.), Kubernetes will assign the 
 kubectl get ingress k8s-demo-app -w
 ```
 
-You sould see something like this, wait the address field shows your new IP.
+You should see something like this, wait the address field shows your new IP.
 ```
 NAME           CLASS    HOSTS                                                   ADDRESS        PORTS   AGE
 k8s-demo-app   <none>   k8s-demo-app-lab-st-test-w01-s001.192.168.64.3.nip.io   192.168.64.3   80      6m27s
@@ -19,7 +20,7 @@ session: 1
 ```
 
 
-Test your endpoint with your browser or with curl.
+Test the ingress configuration execute the following command.
 ```execute-2
 curl k8s-demo-app-{{ session_namespace }}.{{ ingress_domain }}
 ```
