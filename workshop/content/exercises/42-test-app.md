@@ -1,5 +1,17 @@
 
 
+Modify the `skaffold.yaml` file to specify the port to forward to
+
+```editor:insert-lines-before-line
+file: ~/demo/skaffold.yaml
+line: 22
+text: |
+      portForward:
+      - resourceType: service
+        resourceName: k8s-workshop-name-service 
+        port: 80
+        localPort: 4504
+```
 Deploy the apps using Skaffold
 
 ```execute-1
@@ -55,7 +67,7 @@ to the commands below.**
 
 
 ```execute-2
-curl localhost:81
+curl localhost:4504
 ```
 
 

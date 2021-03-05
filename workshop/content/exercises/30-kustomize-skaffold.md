@@ -35,6 +35,11 @@ text: |
           deploy:
             kustomize:
               paths: ["kustomize/qa"]
+      portForward:
+      - resourceType: service
+        resourceName: k8s-demo-app 
+        port: 80
+        localPort: 4503
 
 ```
 

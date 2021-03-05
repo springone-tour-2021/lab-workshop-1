@@ -40,7 +40,7 @@ Now you can execute the following command to make a request to the application. 
 break at our breakpoint, at which point you can step through the code, view variable values, etc.
 
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 Be sure to detach the debugger and kill the `skaffold` process before continuing
