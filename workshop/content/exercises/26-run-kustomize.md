@@ -1,15 +1,13 @@
 
+You can use `kustomize build` to build the customizations and produce all of the YAML to deploy our application.
 
-You will need to have [Kustomize installed](https://github.com/kubernetes-sigs/kustomize/blob/master/docs/INSTALL.md)
-
-
-This is our base deployment and service resources.
+To build the base profile for our application run the following command.
 ```execute-1
 kustomize build ./kustomize/base
 
 ```
 
-Notice when we build the QA customization that the replicas property is updated to `2`
+When we build the QA customization the replicas property is updated to `2`.
 ```execute-1
 kustomize build ./kustomize/qa
 ```

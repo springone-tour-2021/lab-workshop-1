@@ -1,9 +1,9 @@
 
 
 *   One of the [12 factors for cloud native apps](https://12factor.net/config) is to externalize configuration
-*   Kubernetes provides support for externalizing configuration via config maps and secrets
+*   Kubernetes provides support for externalizing configuration via ConfigMaps and Secrets
 
-We can create a config map or secret easily using `kubectl`
+We can create a ConfigMap or secret easily using `kubectl`.  For example
 ```execute-1
 kubectl create configmap log-level --from-literal=LOGGING_LEVEL_ORG_SPRINGFRAMEWORK=DEBUG
 ```

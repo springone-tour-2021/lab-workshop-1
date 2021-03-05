@@ -43,6 +43,11 @@ text: |
             - k8s/deployment.yaml
             - k8s/service.yaml
             - k8s/ingress.yaml
+        portForward:
+        - resourceType: service
+          resourceName: k8s-demo-app 
+          port: 80
+          localPort: 4503
 ```
 
 

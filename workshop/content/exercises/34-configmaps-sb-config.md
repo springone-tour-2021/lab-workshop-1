@@ -1,7 +1,7 @@
 
 
-*   In Spring Boot we usually place our configuration values in application properties or YAML
-*   Config Maps in Kubernetes can be populated with values from files, like properties or YAML files
+*   In Spring Boot we usually place our configuration values in application properties or YAML files
+*   ConfigMaps in Kubernetes can be populated with values from files, like properties or YAML files
 *   We can do this via `kubectl`
 
 
@@ -10,7 +10,7 @@ kubectl create configmap k8s-demo-app-config --from-file ./path/to/application.y
 ```
 
 
-No need to execute the above command, it is just an example, the following sections will show a better way
+**No need to execute the above command, it is just an example, the following sections will show a better way.**
 
 
 

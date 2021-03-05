@@ -3,14 +3,14 @@
 
 
 
-Currently our Skaffold configuration uses `kubectl` to deploy our artifacts, but we can change that to use `kustomize`
+Currently our Skaffold configuration uses `kubectl` to deploy our artifacts, but we can change that to use `kustomize`.
 
 First, delete your previous `skaffold.yaml`
 ```execute-1
 rm skaffold.yaml
 ```
 
-Change your `skaffold.yaml` to the following.
+Create a new `skaffold.yaml` using the following content.
 ```editor:append-lines-to-file
 file: ~/demo/skaffold.yaml
 text: |
@@ -35,10 +35,15 @@ text: |
           deploy:
             kustomize:
               paths: ["kustomize/qa"]
+      portForward:
+      - resourceType: service
+        resourceName: k8s-demo-app 
+        port: 80
+        localPort: 4503
 
 ```
 
-*   Notice now the `deploy` property has been changed from `kubectl` to now use Kustomize
+*   Notice now the `deploy` property has been changed from `kubectl` to now use `kustomize`
 *   Also notice that we have a new profiles section allowing us to deploy our QA configuration using Skaffold
 
 
