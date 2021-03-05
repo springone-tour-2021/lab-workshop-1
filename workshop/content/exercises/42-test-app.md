@@ -4,9 +4,8 @@ Modify the `skaffold.yaml` file to specify the port to forward to
 
 ```editor:insert-lines-before-line
 file: ~/demo/skaffold.yaml
-line: 22
+line: 23
 text: |
-      portForward:
       - resourceType: service
         resourceName: k8s-workshop-name-service 
         port: 80
@@ -59,7 +58,7 @@ Port forwarding service/k8s-workshop-name-service in namespace lab-workshop-1-w0
 
 ```
 
-**The ports used by Skaffold may differ in your deployment so please pay attention to the ports Saffold forwards to and make the appropriate changes
+**The ports used by Skaffold may differ in your deployment so please pay attention to the ports Skaffold forwards to and make the appropriate changes
 to the commands below.**
 
 
