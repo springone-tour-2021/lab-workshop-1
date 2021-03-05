@@ -5,7 +5,7 @@
 
 
 
-*   If you run your normal `skaffold` commands it will use the deployment configuration from `kustomize/base`
+*   If you run`skaffold` without specifying a profile parameter skaffold will use the deployment configuration from `kustomize/base`
 
 
 ```execute-1
@@ -15,7 +15,7 @@ skaffold dev --port-forward
 
 
 
-*   If you want to test out the QA deployment run the following command to activate the QA profile
+*   If you want to test out the QA deployment you can specify the `qa` profile
 
 
 ```execute-1

@@ -1,6 +1,6 @@
 
 
-We can pipe the output from `kustomize` into `kubectl` in order to use the generated YAML to deploy the app to Kubernetes
+We can pipe the output from `kustomize` into `kubectl` in order to use the generated YAML to deploy our app to Kubernetes
 
 
 ```execute-1
@@ -10,14 +10,9 @@ kustomize build kustomize/qa | kubectl apply -f -
 
 
 
-If you are watching the pods in your Kubernetes namespace you will now see two pods created instead of one
+If you are watching the pods in your Kubernetes namespace you will see two pods created instead of one because we build the QA customization.
 ```execute-2
 watch -n 1 kubectl get all
-```
-
-To exit the watch command
-```terminal:interrupt
-session: 2
 ```
 
 ```
@@ -37,10 +32,10 @@ NAME                                      DESIRED   CURRENT   READY   AGE
 replicaset.apps/k8s-demo-app-647b8d5b7b   2         2         2       84s
 ```
 
-
-Our service `k8s-demo-app` will load balance requests between these two pods
-
-
+To exit the watch command
+```terminal:interrupt
+session: 2
+```
 
 ---
 

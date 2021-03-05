@@ -1,6 +1,6 @@
 
 
-[Kustomize](https://kustomize.io/) another tool we can use in our Kubernetes toolbox that allows us to customize deployments to different environments
+[Kustomize](https://kustomize.io/) is another tool we can use in our Kubernetes toolbox that allows us to customize deployments to different environments
 We can start with a base set of resources and then apply customizations on top of those
 
 Features

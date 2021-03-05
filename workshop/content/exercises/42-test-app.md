@@ -1,6 +1,7 @@
 
 
-Modify the `skaffold.yaml` file to specify the port to forward to
+Modify the `skaffold.yaml` file to specify the port to forward to.  This is optional, Skaffold will allocate a random port. but for the sake of everyone running through this workshop and having
+some consistency we specify the port in our Skaffold configuration.
 
 ```editor:insert-lines-before-line
 file: ~/demo/skaffold.yaml
@@ -50,16 +51,13 @@ replicaset.apps/k8s-workshop-name-service-79475f456d   1         1         1    
 
 
 
-Because we deployed two services and supplied the `-port-forward` flag Skaffold will forward two ports
+Because we deployed two services and supplied the `-port-forward` flag, Skaffold will forward two ports
 
 ```
-Port forwarding service/k8s-demo-app in namespace lab-workshop-1-w01-s002, remote port 80 -> address 127.0.0.1 port 80
-Port forwarding service/k8s-workshop-name-service in namespace lab-workshop-1-w01-s002, remote port 80 -> address 127.0.0.1 port 81
+Port forwarding service/k8s-demo-app in namespace lab-workshop-1-w01-s002, remote port 80 -> address 127.0.0.1 port 4503
+Port forwarding service/k8s-workshop-name-service in namespace lab-workshop-1-w01-s002, remote port 80 -> address 127.0.0.1 port 4504
 
 ```
-
-**The ports used by Skaffold may differ in your deployment so please pay attention to the ports Skaffold forwards to and make the appropriate changes
-to the commands below.**
 
 
 *   Test the name service

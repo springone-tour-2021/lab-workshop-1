@@ -2,11 +2,11 @@
 
 
 
-*   There are a number of ways to consume the data from config maps in our apps
+*   There are a number of ways to consume the data from ConfigMaps in our apps
 *   Perhaps the easiest is to use the data as environment variables
 *   To do this we need to change our `deployment.yaml` in `kustomize/base`
 
-*   Add the `envFrom` properties above which reference our config map `log-level`
+*   Add the `envFrom` properties from the previous module which reference our ConfigMap `log-level`
 ```editor:insert-value-into-yaml
 file: ~/demo/kustomize/base/deployment.yaml
 path: spec.template.spec.containers.[0]

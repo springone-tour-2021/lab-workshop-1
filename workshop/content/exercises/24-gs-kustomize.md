@@ -13,7 +13,7 @@ mv k8s/* kustomize/base
 ```
 
 
-Delete the `k8s` directory
+Delete the `k8s` directory since we no longer need it
 ```execute-1
 rm -Rf k8s
 ```
