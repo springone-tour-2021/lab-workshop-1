@@ -16,7 +16,7 @@ spec:
     namespaces:
       budget: large
     resources:
-      memory: 550Mi
+      memory: 2Gi 
     applications:
       terminal:
         enabled: true
@@ -28,6 +28,6 @@ spec:
         enabled: true
       registry:
         enabled: true
-        memory: 2Gi
+        memory: 550Mi
       docker:
         enabled: true
