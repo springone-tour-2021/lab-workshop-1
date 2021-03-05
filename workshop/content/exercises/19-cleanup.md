@@ -14,6 +14,7 @@ WARN[2086] exit status 1
 Cleaning up...
  - deployment.apps "k8s-demo-app" deleted
  - service "k8s-demo-app" deleted
+ - ingress.networking.k8s.io "k8s-demo-app" deleted
 ```
 
 
