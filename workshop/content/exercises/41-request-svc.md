@@ -1,4 +1,4 @@
-Delete your previous request in `K8sDemoAppApplication.java`
+Delete previous implementation of the `hello` method in `K8sDemoAppApplication.java`
 
 ```execute-1
  sed -i '19d' ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
