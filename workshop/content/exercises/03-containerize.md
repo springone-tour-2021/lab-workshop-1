@@ -54,7 +54,7 @@ curl http://localhost:8080
 ```
 
 
-Be sure to stop the Docker container before continuing. You can stop the container and remove it by running 
+Be sure to stop the Docker container before continuing. 
 ```execute-2
 docker rm -f k8s-demo-app 
 ```

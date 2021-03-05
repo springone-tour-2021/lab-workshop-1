@@ -5,95 +5,93 @@ modules:
     setup-environment:
         name: Setup Environment
         exit_sign: Start Workshop
-    exercises/01-sample-content:
-        name: Sample Content
-    exercises/02-create-spring-app:
+    exercises/01-create-spring-app:
         name: Create a Spring Boot app
-    exercises/03-run-the-app:
+    exercises/02-run-the-app:
         name: Run the App
-    exercises/04-containerize:
+    exercises/03-containerize:
         name: Containerize the App
-    exercises/05-registry:
+    exercises/04-registry:
         name: Putting The Container In A Registry
-    exercises/06-deploy-to-k8s:
+    exercises/05-deploy-to-k8s:
         name: Deploying to Kubernetes
-    exercises/07-testing-app:
+    exercises/06-testing-app:
         name: Testing the App
-    exercises/08-expose-svc:
+    exercises/07-expose-svc:
         name: Exposing the Service
-    exercises/09-testing-ingress:
+    exercises/08-testing-ingress:
         name: Testing the Public Ingress
-    exercises/10-best-practice:
+    exercises/09-best-practice:
         name: Best Practices
-    exercises/11-add-probes:
+    exercises/10-add-probes:
         name: Add Readiness and Liveness Probes
-    exercises/12-graceful-shutdown:
+    exercises/11-graceful-shutdown:
         name: Graceful Shutdown
-    exercises/13-in-flight-request:
+    exercises/12-in-flight-request:
         name: Handling In Flight Requests
-    exercises/14-update-redeploy:
+    exercises/13-update-redeploy:
         name: Update The Container & Apply The Updated Deployment YAML
-    exercises/15-clean-up:
+    exercises/14-clean-up:
         name: Cleaning-up
-    exercises/16-skaffold-intro:
+    exercises/15-skaffold-intro:
         name: Skaffold
-    exercises/17-dev-test-skaffold:
+    exercises/16-dev-test-skaffold:
         name: Development with Skaffold
-    exercises/18-change-controller:
+    exercises/17-change-controller:
         name: Make Changes to the Controller
-    exercises/19-cleanup:
+    exercises/18-cleanup:
         name: Cleaning Everything Up
-    exercises/20-create-launcher:
+    exercises/19-create-launcher:
         name: Create a Launcher    
-    exercises/21-debug-skaffold:
+    exercises/20-debug-skaffold:
         name: Debugging with Skaffold
-    exercises/22-remote-debug:
+    exercises/21-remote-debug:
         name: Setting Up A Remote Debug Configuration in VS Code
-    exercises/23-kustomize:
+    exercises/22-kustomize:
         name: Kustomize
-    exercises/24-gs-kustomize:
+    exercises/23-gs-kustomize:
         name: Getting Started with Kustomize
-    exercises/25-kustomization-yamlfile:
+    exercises/24-kustomization-yamlfile:
         name: 'kustomization.yaml'
-    exercises/26-customize-deployment:
+    exercises/25-customize-deployment:
         name: Customizing Our Deployment
-    exercises/27-run-kustomize:
+    exercises/26-run-kustomize:
         name: Running Kustomize
-    exercises/28-pipe-to-kubectl:
+    exercises/27-pipe-to-kubectl:
         name: Piping to Kustomize
-    exercises/29-clean-up:
+    exercises/28-clean-up:
         name: Clean Up
-    exercises/30-kustomize-skaffold:
+    exercises/29-kustomize-skaffold:
         name: Using Kustomize with Skaffold
-    exercises/31-test-skaffold-kustomize:
+    exercises/30-test-skaffold-kustomize:
         name: Testing Skaffold + Kustomize
-    exercises/32-externalized-config:
+    exercises/31-externalized-config:
         name: Externalized Configuration
-    exercises/33-configmaps-in-apps:
+    exercises/32-configmaps-in-apps:
         name: Using ConfigMaps in Our Apps
-    exercises/34-rm-configmap-deployment:
+    exercises/33-rm-configmap-deployment:
         name: Removing The Config Map and Reverting The Deployment
-    exercises/35-configmaps-sb-config:
+    exercises/34-configmaps-sb-config:
         name: Config Maps and Spring Boot Application Configuration
-    exercises/36-configmap-kustomize:
+    exercises/35-configmap-kustomize:
         name: Creating A Config Map With Kustomize
-    exercises/37-test-new-deploy:
+    exercises/36-test-new-deploy:
         name: Testing Our New Deployment
-    exercises/38-service-discovery:
+    exercises/37-service-discovery:
         name: Service Discovery
-    exercises/39-deploy-another:
+    exercises/38-deploy-another:
         name: Deploying Another App
-    exercises/40-mod-kustomize-config:
+    exercises/39-mod-kustomize-config:
         name: Modify `kustomization.yaml`
-    exercises/41-request-svc:
+    exercises/40-request-svc:
         name: Making A Request To The Service
-    exercises/42-test-app:
+    exercises/41-test-app:
         name: Testing the App
-    exercises/43-run-petclinic:
+    exercises/42-run-petclinic:
         name: Running The PetClinic App
-    exercises/44-deploy-petclinic:
+    exercises/43-deploy-petclinic:
         name: Deploying PetClinic
-    exercises/45-dissect-petclinic:
+    exercises/44-dissect-petclinic:
         name: Dissecting PetClinic
     workshop-summary:
         name: Workshop Summary

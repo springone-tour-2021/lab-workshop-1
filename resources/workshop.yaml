@@ -16,7 +16,7 @@ spec:
     namespaces:
       budget: large
     resources:
-      memory: 2Gi 
+      memory: 1.3Gi 
     applications:
       terminal:
         enabled: true
