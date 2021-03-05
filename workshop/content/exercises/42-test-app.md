@@ -53,7 +53,7 @@ Port forwarding service/k8s-workshop-name-service in namespace user1, remote por
 
 
 ```execute-2
-curl localhost:80
+curl localhost:4503
 ```
 
 
