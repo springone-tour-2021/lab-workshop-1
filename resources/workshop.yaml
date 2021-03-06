@@ -15,7 +15,7 @@ spec:
   session:
     dashboards:
     - name: Petclinic
-      url: "$(ingress_protocol)://$(session_namespace)-application.$(ingress_domain)/"
+      url: "$(ingress_protocol)://petclinic-app-$(session_namespace).$(ingress_domain)/"
     namespaces:
       budget: large
     resources:
