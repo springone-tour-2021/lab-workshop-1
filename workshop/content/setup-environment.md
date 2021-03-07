@@ -1,9 +1,9 @@
 ## Before you begin ...
 
 #### Workshop Command Execution
-The workshop uses these action blocks for various purposes. Anytime you see such a block with an icon on the right hand side, you can click on it and it will perform the listed action for you.
+This workshop uses action blocks for various purposes, anytime you see such a block with an icon on the right hand side, you can click on it and it will perform the listed action for you.
 
-> When clicking through make sure to wait a second or two for the action to execute before proceeding to the next command or the workshop might not behave as expected.
+> **Please, wait a second or two for an action to fully execute before proceeding to the next command or the workshop might not behave as expected.**
 
 #### Workshop Terminals
 Two terminals are included in this workshop, you will mainly use terminal 1, but sometimes a process might occupy it so you can use terminal 2 .
@@ -27,10 +27,6 @@ name: Editor
 ```
 
 #### Workshop Console (Ocant)
-You will have the ability to inspect your Kubernetes cluster with Octant, an open source developer-centric web interface for Kubernetes that lets you inspect a Kubernetes cluster and its applications.
+You will have the ability to inspect your Kubernetes cluster with (Octant)[https://github.com/vmware-tanzu/octant], an Open Source developer-centric web interface for Kubernetes that lets you inspect a Kubernetes cluster and its applications.
 
-Feel free to look at this tab or click the command bellow.
-
-```dashboard:open-dashboard
-name: Console
-```
+You haven't deployed anything to Kubernetes so there isn't much to display at the moment. When you get to the section `7: Deploying to Kubernetes`, you will have a Kubernetes cluster and a Spring Boot app to inspect with (Octant)[https://github.com/vmware-tanzu/octant].
