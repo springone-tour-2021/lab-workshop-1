@@ -1,4 +1,4 @@
-During this workshop you will learn the finer details of how to create, build, run, and debug a basic Spring Boot app on
+During this workshop you learned the finer details of how to create, build, run, and debug a basic Spring Boot app on
 Kubernetes by doing the following:
 
 *   Create a basic Spring Boot app

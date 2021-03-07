@@ -8,7 +8,7 @@ This workshop uses action blocks for various purposes, anytime you see such a bl
 #### Workshop Terminals
 Two terminals are included in this workshop, you will mainly use terminal 1, but if it's busy you can use terminal 2 .
 
-Try teh action block's bellow
+Try the action block's bellow
 ```execute-1
 echo "Hi I'm terminal 1"
 ```
