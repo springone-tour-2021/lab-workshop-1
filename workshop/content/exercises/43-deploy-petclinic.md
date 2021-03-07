@@ -61,8 +61,11 @@ Finally we can watch to see once an IP address has been assigned to our ingress 
 kubectl get ingress -w
 ```
 
-Once an IP address has been assigned you can open the host name in your browser and you should see the UI of the application.
+Once an IP address has been assigned you can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
+```dashboard:open-dashboard
+name: Petclinic
+```
 
 *   To use the app you can go to “Find Owners”, add yourself, and add your pets
 *   All this data will be stored in the MySQL database
