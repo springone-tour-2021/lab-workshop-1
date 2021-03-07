@@ -37,7 +37,7 @@ If you query the registry you should now see the image
 skopeo list-tags docker://$REGISTRY_HOST/apps/demo
 ```
 
-You should see then get a print out like the this.
+You should see a print out like the this.
 ```
 {
     "Repository": "lab-workshop-1-w01-s001-registry.192.168.64.2.nip.io/apps/demo",

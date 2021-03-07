@@ -32,9 +32,9 @@ The first file we need is a deployment descriptor.  Execute the following comman
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > ~/demo/k8s/deployment.yaml
 ```
 
-*   The resulting `k8s/deployment.yaml` should look similar to this.
+*   The resulting `k8s/deployment.yaml` should look like this.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -80,7 +80,7 @@ kubectl create service clusterip k8s-demo-app --tcp 80:8080 -o yaml --dry-run=cl
 
 *   The resulting `service.yaml` should look similar to this
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:

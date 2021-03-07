@@ -2,7 +2,7 @@
 ### 
 
 Skaffold will watch the project files for changes
-Open `K8sDemoApplication.java` and change the `hello` method to return `Hola World`
+Open `K8sDemoApplication.java` and change the `hello` method to return `Hola World`.
 
 ```editor:select-matching-text
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
