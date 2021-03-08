@@ -1,6 +1,4 @@
 ### 
-**Liveness and Readiness Probes**
-
 *   Kubernetes uses two probes to determine if the app is ready to accept traffic and whether the app is alive
 *   If the readiness probe does not return a `200` no traffic will be routed to it
 *   If the liveness probe does not return a `200` Kubernetes will restart the Pod

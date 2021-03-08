@@ -1,7 +1,4 @@
 
-### 
-**Testing The App**
-
 *   The service is assigned a cluster IP, which is only accessible from inside the cluster. 
 
 To see this run the next command.

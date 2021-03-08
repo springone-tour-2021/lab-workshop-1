@@ -1,6 +1,8 @@
 ---
 ## 
-**Getting Started**
+**Getting Started** 
+
+
 
 First we will create a directory for our app and use [start.spring.io](http://start.spring.io) to create a basic Spring
 Boot application.

@@ -1,6 +1,4 @@
 
-### 
-**Exposing The Service**
 
 *   If we want to expose the service outside of the cluster we can use an Ingress.
 

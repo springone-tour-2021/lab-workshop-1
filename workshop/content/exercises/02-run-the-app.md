@@ -1,6 +1,5 @@
 
 ## 
-**Run The App**
 
 In a terminal window run the following command.  The application will start on port `8080`.
 

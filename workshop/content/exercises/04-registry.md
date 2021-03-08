@@ -1,8 +1,5 @@
 
 ### 
-**Putting The Container In A Registry**
-
-
 
 *   Up until this point the container only lives on your machine
 *   It is useful to instead place the container in a registry

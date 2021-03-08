@@ -1,8 +1,5 @@
 
 ## 
-**Deploying To Kubernetes**
-
-
 
 *   With our container built and deployed to a registry you can now run this container on Kubernetes
 
