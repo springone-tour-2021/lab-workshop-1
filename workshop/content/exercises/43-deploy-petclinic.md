@@ -65,7 +65,7 @@ kubectl get ingress -w
 Once an IP address has been assigned you can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
 ```dashboard:create-dashboard
-name: Petclinic
+name: Dogclinic
 url: petclinic-app{{ session_namespace }}.{{ ingress_domain}}
 ```
 
