@@ -1,7 +1,7 @@
 modules:
     workshop-overview:
         name: Workshop Overview
-        exit_sign: Setup Environment
+        exit_sign: Before You Begin
     setup-environment:
         name: Setup Environment
         exit_sign: Start Workshop

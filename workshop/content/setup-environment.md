@@ -1,5 +1,3 @@
-## Before you begin ...
-
 #### Workshop Command Execution
 This workshop uses action blocks for various purposes, anytime you see such a block with an icon on the right hand side, you can click on it and it will perform the listed action for you.
 

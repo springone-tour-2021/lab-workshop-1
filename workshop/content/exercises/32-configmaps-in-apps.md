@@ -21,6 +21,9 @@ value:
 skaffold dev
 ```
 *   If everything worked correctly you should see much more verbose logging in your console
+```execute-2
+curl localhost:4503
+```
 
 Be sure to kill the `skaffold` process before continuing
 

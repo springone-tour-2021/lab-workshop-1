@@ -35,7 +35,7 @@ file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 22
 text: |
 		String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
-		return "Hola " + name;
+		return "Hola " + name + "\n";
 
 ```
 
