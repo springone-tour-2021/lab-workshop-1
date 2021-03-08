@@ -32,7 +32,7 @@ text: |
                     number: 80
 ```
 
-Now, get `YourHost` from your lab environment and add it to your `ingress.yaml` with the next command. Within this lab k8s-demo-app-{{ session_namespace }}.{{ ingress_domain} is `YourHost` for your `k8s-demo-app` application.
+Now, get `YourHost` from your lab environment and add it to your `ingress.yaml` with the next command. Within this lab k8s-demo-app-{{ session_namespace }}.{{ ingress_domain}} is `YourHost` for your `k8s-demo-app` application.
 ```execute-1
  sed s/YourHost/k8s-demo-app-{{ session_namespace }}.{{ ingress_domain}/g ~/demo/k8s/ingress.yaml -i
 ```
