@@ -66,7 +66,7 @@ Once an IP address has been assigned you can open the host name in your browser 
 
 ```dashboard:create-dashboard
 name: Dogclinic
-url: petclinic-app{{ session_namespace }}.{{ ingress_domain}}
+url: petclinic-app-{{ session_namespace }}.{{ ingress_domain}}
 ```
 
 ```dashboard:open-dashboard
