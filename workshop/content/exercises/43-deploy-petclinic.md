@@ -44,7 +44,7 @@ text: |
                     number: 80
 ```
 
-Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app{{ session_namespace }}.{{ ingress_domain}} is `YourHost` for your `Petclinic` app.
+Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app{{ session_namespace }}.{{ ingress_domain }} is `YourHost` for your `Petclinic` app.
 
 ```execute-1
  sed s/YourHost/petclinic-app{{ session_namespace }}.{{ ingress_domain }}/g ~/demo/petclinic-ingress.yaml -i
