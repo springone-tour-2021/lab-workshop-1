@@ -12,7 +12,7 @@ The above `kustomize build` command may take some time to complete.  You can wat
 watch kubectl get all
 ```
 
-Once the pod is up and running you can stop the `watch` command
+Once the pod is up and running, you can stop the `watch` command.
 
 To exit the watch command
 ```terminal:interrupt
@@ -44,7 +44,8 @@ text: |
                     number: 80
 ```
 
-Now, source your host from your lab environment and add it to `petclinic-ingress.yaml`. (This is not necessary outside of this lab).
+Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN} is `YourHost` for your `Petclinic` app.
+
 ```execute-1
  sed s/YourHost/petclinic-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g ~/demo/petclinic-ingress.yaml -i
 ```
