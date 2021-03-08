@@ -44,10 +44,10 @@ text: |
                     number: 80
 ```
 
-Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN} is `YourHost` for your `Petclinic` app.
+Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app{{ session_namespace }}.{{ ingress_domain}} is `YourHost` for your `Petclinic` app.
 
 ```execute-1
- sed s/YourHost/petclinic-app-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}/g ~/demo/petclinic-ingress.yaml -i
+ sed s/YourHost/petclinic-app{{ session_namespace }}.{{ ingress_domain}}/g ~/demo/petclinic-ingress.yaml -i
 ```
 
 We need to apply the new ingress rule to our cluster
@@ -64,9 +64,11 @@ kubectl get ingress -w
 
 Once an IP address has been assigned you can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
-```dashboard:open-dashboard
+```dashboard:create-dashboard
 name: Petclinic
+url: petclinic-app{{ session_namespace }}.{{ ingress_domain}}
 ```
+
 
 *   To use the app you can go to “Find Owners”, add yourself, and add your pets
 *   All this data will be stored in the MySQL database

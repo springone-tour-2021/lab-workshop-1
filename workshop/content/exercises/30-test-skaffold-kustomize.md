@@ -16,7 +16,7 @@ skaffold dev -p qa --port-forward
 ```
 
 Test your deployment freely.
-```execute-1
+```execute-2
 curl localhost:4503
 ```
 

@@ -88,3 +88,74 @@ value:
 
 ---
 
+Your `deployment.yaml`
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s-demo-app
+  name: k8s-demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-demo-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: k8s-demo-app
+    spec:
+      containers:
+      - image: lab-workshop-1-w01-s001-registry.192.168.64.7.nip.io/apps/demo
+        name: demo
+        resources: {}
+        readinessProbe:
+          httpGet:
+            port: 8080
+            path: /actuator/health/readiness
+        livenessProbe:
+          httpGet:
+            port: 8080
+            path: /actuator/health/liveness
+        lifecycle:
+          preStop:
+            exec:
+              command:
+                - sh
+                - '-c'
+                - sleep 10
+        volumeMounts:
+          - name: config-volume
+            mountPath: /workspace/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: k8s-demo-app-config
+status: {}
+```
+Your `base/kustomization.yaml`
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:    
+- service.yaml
+- deployment.yaml
+- ingress.yaml
+configMapGenerator:
+  - name: k8s-demo-app-config
+    files:
+      - application.yaml
+```
+
+Your `base/application.yaml
+```yaml
+logging:
+  level:
+    org:
+      springframework: INFO
+```
