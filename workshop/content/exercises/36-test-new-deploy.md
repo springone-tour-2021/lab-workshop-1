@@ -38,12 +38,12 @@ Be sure to kill the `skaffold` process before continuing
 session: 1
 ```
 
-Also you will want to go back to `application.properties` in `kustomize/base` and change `logging.level.org.springframework` back to `INFO`.
+Also, you will want to go back to `application.properties` in `kustomize/base` and change `logging.level.org.springframework` back to `INFO`.
 ```execute-2
 sed -i s/DEBUG/INFO/g ~/demo/kustomize/base/application.yaml
 ```
 
-To verify:
+To verify `springframework` is `INFO` again:
 ```editor:select-matching-text
 file: ~/demo/kustomize/base/application.yaml
 text: "springframework" 
