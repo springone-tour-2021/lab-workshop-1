@@ -27,4 +27,7 @@ Be sure to kill the `skaffold` process before continuing
 session: 1
 ```
 
+Also you will want to go back to `application.properties` in `kustomize/base` and change `logging.level.org.springframework` back to `INFO`.
+
+---
 ---
