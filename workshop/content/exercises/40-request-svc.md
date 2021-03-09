@@ -69,7 +69,7 @@ private RestTemplate rest = new RestTemplateBuilder().build();
 @GetMapping("/")
 public String hello() {
 String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
-return "Hola " + name;
+return "Hola " + name + "\n";
 }
 }
 ```

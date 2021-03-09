@@ -18,8 +18,8 @@ spec:
       url: "$(ingress_protocol)://petclinic-app-$(session_namespace).$(ingress_domain)/"
     namespaces:
       budget: large
-    resources:
-      memory: 1.5Gi 
+    resources:  
+      memory: 1.7Gi 
     applications:
       terminal:
         enabled: true
