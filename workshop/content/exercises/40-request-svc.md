@@ -45,7 +45,7 @@ text: |
 *   Notice the hostname of the request we are making matches the service name in [our service.yaml file](https://github.com/ryanjbaxter/k8s-spring-workshop/blob/master/name-service/kustomize/base/service.yaml#L7)
 
 
-To verify yuor work, this is what your `K8sDemoAppApplication.java` file should look like.
+To verify your work, this is what your `K8sDemoAppApplication.java` file should look like.
 ```java
 package com.example.demo;
 
@@ -66,11 +66,11 @@ private RestTemplate rest = new RestTemplateBuilder().build();
 		SpringApplication.run(K8sDemoAppApplication.class, args);
 	}
 
-@GetMapping("/")
-public String hello() {
-String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
-return "Hola " + name;
-}
+    @GetMapping("/")
+    public String hello() {
+        String name = rest.getForObject("http://k8s-workshop-name-service", String.class);
+        return "Hola " + name;
+    }
 }
 ```
 

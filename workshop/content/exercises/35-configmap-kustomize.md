@@ -152,7 +152,7 @@ configMapGenerator:
       - application.yaml
 ```
 
-Your `base/application.yaml
+Your `base/application.yaml`
 ```yaml
 logging:
   level:
