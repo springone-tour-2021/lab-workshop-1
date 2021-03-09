@@ -1,5 +1,5 @@
 
-If you run `skaffold` without specifying a `profile` parameter skaffold will use the deployment configuration from `kustomize/base`.
+If you run `skaffold` without specifying a `profile` parameter Skaffold will use the deployment configuration from `kustomize/base`.
 
 ```execute-1
 skaffold dev --port-forward
@@ -9,6 +9,12 @@ skaffold dev --port-forward
 
 
 If you want to test out the QA deployment you can specify the `qa` profile.
+
+Terminate the currently running Skaffold process before trying the `qa` profile.
+
+```terminal:interrupt
+session: 1
+```
 
 
 ```execute-1

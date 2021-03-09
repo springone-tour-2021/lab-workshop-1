@@ -47,22 +47,32 @@ text: |
 Now, get `YourHost` from your lab environment and add it to your `petclinic-ingress.yaml` with the next command. Within this lab petclinic-app{{ session_namespace }}.{{ ingress_domain }} is `YourHost` for your `Petclinic` app.
 
 ```execute-1
- sed s/YourHost/petclinic-app{{ session_namespace }}.{{ ingress_domain }}/g ~/demo/petclinic-ingress.yaml -i
+ sed s/YourHost/petclinic-app-{{ session_namespace }}.{{ ingress_domain }}/g ~/demo/petclinic-ingress.yaml -i
 ```
 
-We need to apply the new ingress rule to our cluster
+Take a peek at your YAML file to verify your host populated correctly, it should no longer say `YourHost`.
+```editor:select-matching-text
+file: ~/demo/petclinic-ingress.yaml
+text: "host" 
+```
+
+Use the following command to apply the new ingress rule to the cluster
 
 ```execute-1
  kubectl apply -f ~/demo/petclinic-ingress.yaml
 ```
 
-Finally we can watch to see once an IP address has been assigned to our ingress rule
+Depending on the ingress being used in the Kubernetes cluster you might need to wait for an IP address to be assigned to the ingress.  For
+this lab, if you are using the hosted version you will not see an IP address assigned.  If you are running the workshop locally on
+a Kubernetes cluster like Minikube you will need to wait for an IP address to be assigned.
+
+Use the following command to find the hostname for the ingress rule and optionally watch for an IP address to be assigned to the ingress rule.
 
 ```execute-1
 kubectl get ingress -w
 ```
 
-Once an IP address has been assigned you can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
+You can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
 ```dashboard:open-dashboard
 name: Petclinic
