@@ -13,9 +13,15 @@ spec:
     image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
     files: github.com/springone-tour-2021/lab-workshop-1?ref=main
   session:
-    dashboards:
-    - name: Petclinic
-      url: "$(ingress_protocol)://petclinic-app-$(session_namespace).$(ingress_domain)/"
+    session:
+      ingresses:
+      - name: petclinic
+        protocol: http
+        host: petclinic-app.$(session_namespace).svc.cluster.local
+        port: 80
+      dashboards:
+      - name: Petclinic
+        url: "$(ingress_protocol)://$(session_namespace)-petclinic.$(ingress_domain)/"
     namespaces:
       budget: large
     resources:  
