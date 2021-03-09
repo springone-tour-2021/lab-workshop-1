@@ -1,7 +1,7 @@
 modules:
     workshop-overview:
         name: Workshop Overview
-        exit_sign: Setup Environment
+        exit_sign: Before You Begin
     setup-environment:
         name: Setup Environment
         exit_sign: Start Workshop
@@ -41,11 +41,11 @@ modules:
         name: Make Changes to the Controller
     exercises/18-cleanup:
         name: Cleaning Everything Up
-    exercises/20-debug-skaffold:
+    exercises/19-debug-skaffold:
         name: Debugging with Skaffold
-    exercises/21-create-launcher:
+    exercises/20-create-launcher:
         name: Create a Launcher
-    exercises/22-remote-debug:
+    exercises/21-remote-debug:
         name: Setting Up A Remote Debug Configuration in VS Code
     exercises/22-kustomize:
         name: Kustomize

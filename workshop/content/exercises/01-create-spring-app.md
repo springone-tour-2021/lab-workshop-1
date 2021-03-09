@@ -42,7 +42,7 @@ line: 17
 text: |
     @GetMapping("/")
 	public String hello() {
-		return "HelloWorld\n start.spring.io\n";
+		return "HelloWorld\n";
 	}
     
 ```
@@ -69,7 +69,7 @@ public class K8sDemoAppApplication {
 
 	@GetMapping("/")
 	public String hello() {
-		return "Hello World";
+		return "Hello World\n";
 	}
 }
 ```

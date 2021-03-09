@@ -34,6 +34,12 @@ You can run the following command to watch Kubernetes terminate the old containe
 watch -n 1 kubectl get all
 ```
 
+You can stil test with curl.
+```execute-2
+curl k8s-demo-app-{{ session_namespace }}.{{ ingress_domain }}
+```
+
+
 To exit running process in terminal one.
 ```terminal:interrupt
 session: 1

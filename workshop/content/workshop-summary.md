@@ -8,3 +8,4 @@ Kubernetes by doing the following:
 *   Deploy and run the app on Kubernetes
 *   External configuration and service discovery
 *   Deploy the Spring PetClinic App with MySQL
+
