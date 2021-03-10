@@ -30,7 +30,7 @@ text: |
           name: k-s-demo-app--
         build:
           artifacts:
-          - image: YourImage
+          - image: {{ registry_host }}/apps/demo
             buildpacks:
               builder: docker.io/paketobuildpacks/builder:base
               dependencies:
@@ -48,19 +48,6 @@ text: |
           resourceName: k8s-demo-app 
           port: 80
           localPort: 4503
-```
-
-
-We need to replace the image `YourImage` with the correct image located in our repository in the above `skaffold.yaml` file.
-To do this execute the following `sed` command. 
-```execute-1
- sed "s/YourImage/{{ registry_host }}\/apps\/demo/g" skaffold.yaml -i
-```
-
-Take a peek at your file to verify your `image` populated correctly.
-```editor:select-matching-text
-file: ~/demo/skaffold.yaml
-text: "image" 
 ```
 
 The `builder` is the same one used by Spring Boot when it builds a container from the build plugins (you would see it logged on the console when you build the image). Instead of the `buildpacks` builder you could use the `custom` one (with the same `dependencies`):

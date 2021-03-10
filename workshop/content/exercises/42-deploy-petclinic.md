@@ -70,6 +70,9 @@ name: Petclinic
 *   To use the app you can go to “Find Owners”, add yourself, and add your pets
 *   All this data will be stored in the MySQL database
 
-
+To exit the watch command
+```terminal:interrupt
+session: 1
+```
 
 ---
