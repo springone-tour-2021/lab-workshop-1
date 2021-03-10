@@ -24,28 +24,27 @@ modules:
     - exercises/18-cleanup
     - exercises/19-debug-skaffold
     - exercises/20-create-launcher
-    - exercises/21-remote-debug
-    - exercises/22-kustomize
-    - exercises/23-gs-kustomize
-    - exercises/24-kustomization-yamlfile
-    - exercises/25-customize-deployment
-    - exercises/26-run-kustomize
-    - exercises/27-pipe-to-kubectl
-    - exercises/28-clean-up
-    - exercises/29-kustomize-skaffold
-    - exercises/30-test-skaffold-kustomize
-    - exercises/31-externalized-config
-    - exercises/32-configmaps-in-apps
-    - exercises/33-rm-configmap-deployment
-    - exercises/34-configmaps-sb-config
-    - exercises/35-configmap-kustomize
-    - exercises/36-test-new-deploy
-    - exercises/37-service-discovery
-    - exercises/38-deploy-another
-    - exercises/39-mod-kustomize-config
-    - exercises/40-request-svc
-    - exercises/41-test-app
-    - exercises/42-run-petclinic
-    - exercises/43-deploy-petclinic
-    - exercises/44-dissect-petclinic
+    - exercises/21-kustomize
+    - exercises/22-gs-kustomize
+    - exercises/23-kustomization-yamlfile
+    - exercises/24-customize-deployment
+    - exercises/25-run-kustomize
+    - exercises/26-pipe-to-kubectl
+    - exercises/27-clean-up
+    - exercises/28-kustomize-skaffold
+    - exercises/29-test-skaffold-kustomize
+    - exercises/30-externalized-config
+    - exercises/31-configmaps-in-apps
+    - exercises/32-rm-configmap-deployment
+    - exercises/33-configmaps-sb-config
+    - exercises/34-configmap-kustomize
+    - exercises/35-test-new-deploy
+    - exercises/36-service-discovery
+    - exercises/37-deploy-another
+    - exercises/38-mod-kustomize-config
+    - exercises/39-request-svc
+    - exercises/40-test-app
+    - exercises/41-run-petclinic
+    - exercises/42-deploy-petclinic
+    - exercises/43-dissect-petclinic
     - workshop-summary
