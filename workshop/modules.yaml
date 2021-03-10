@@ -45,53 +45,51 @@ modules:
         name: Debugging with Skaffold
     exercises/20-create-launcher:
         name: Create a Launcher
-    exercises/21-remote-debug:
-        name: Setting Up A Remote Debug Configuration in VS Code
-    exercises/22-kustomize:
+    exercises/21-kustomize:
         name: Kustomize
-    exercises/23-gs-kustomize:
+    exercises/22-gs-kustomize:
         name: Getting Started with Kustomize
-    exercises/24-kustomization-yamlfile:
+    exercises/23-kustomization-yamlfile:
         name: 'kustomization.yaml'
-    exercises/25-customize-deployment:
+    exercises/24-customize-deployment:
         name: Customizing Our Deployment
-    exercises/26-run-kustomize:
+    exercises/25-run-kustomize:
         name: Running Kustomize
-    exercises/27-pipe-to-kubectl:
+    exercises/26-pipe-to-kubectl:
         name: Piping to Kustomize
-    exercises/28-clean-up:
+    exercises/27-clean-up:
         name: Clean Up
-    exercises/29-kustomize-skaffold:
+    exercises/28-kustomize-skaffold:
         name: Using Kustomize with Skaffold
-    exercises/30-test-skaffold-kustomize:
+    exercises/29-test-skaffold-kustomize:
         name: Testing Skaffold + Kustomize
-    exercises/31-externalized-config:
+    exercises/30-externalized-config:
         name: Externalized Configuration
-    exercises/32-configmaps-in-apps:
+    exercises/31-configmaps-in-apps:
         name: Using ConfigMaps in Our Apps
-    exercises/33-rm-configmap-deployment:
+    exercises/32-rm-configmap-deployment:
         name: Removing The Config Map and Reverting The Deployment
-    exercises/34-configmaps-sb-config:
+    exercises/33-configmaps-sb-config:
         name: Config Maps and Spring Boot Application Configuration
-    exercises/35-configmap-kustomize:
+    exercises/34-configmap-kustomize:
         name: Creating A Config Map With Kustomize
-    exercises/36-test-new-deploy:
+    exercises/35-test-new-deploy:
         name: Testing Our New Deployment
-    exercises/37-service-discovery:
+    exercises/36-service-discovery:
         name: Service Discovery
-    exercises/38-deploy-another:
+    exercises/37-deploy-another:
         name: Deploying Another App
-    exercises/39-mod-kustomize-config:
+    exercises/38-mod-kustomize-config:
         name: Modify `kustomization.yaml`
-    exercises/40-request-svc:
+    exercises/39-request-svc:
         name: Making A Request To The Service
-    exercises/41-test-app:
+    exercises/40-test-app:
         name: Testing the App
-    exercises/42-run-petclinic:
+    exercises/41-run-petclinic:
         name: Running The PetClinic App
-    exercises/43-deploy-petclinic:
+    exercises/42-deploy-petclinic:
         name: Deploying PetClinic
-    exercises/44-dissect-petclinic:
+    exercises/43-dissect-petclinic:
         name: Dissecting PetClinic
     workshop-summary:
         name: Workshop Summary
