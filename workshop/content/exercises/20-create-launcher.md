@@ -43,11 +43,6 @@ break at our breakpoint, at which point you can step through the code, view vari
 curl localhost:4503
 ```
 
-Be sure to detach the debugger and kill the `skaffold` process before continuing
-```terminal:interrupt
-session: 1
-```
-
 
 
 ---

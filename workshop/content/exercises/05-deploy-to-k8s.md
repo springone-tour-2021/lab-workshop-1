@@ -38,7 +38,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: k8s-demo-app
-    name: k8s-demo-app
+  name: k8s-demo-app
 spec:
   replicas: 1
   selector:
@@ -84,7 +84,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: k8s-demo-app
-    name: k8s-demo-app
+  name: k8s-demo-app
 spec:
   ports:
   - name: 80-8080

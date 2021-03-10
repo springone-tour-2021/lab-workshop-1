@@ -1,5 +1,5 @@
 
-*   Our application could also be handling requests when it receives the notification that it need to shut down.
+*   Our application could also be handling requests when it receives the notification that it needs to shut down.
 *   In order for us to finish processing those requests before the application shuts down we can configure a “grace period” in our Spring Boot applicaiton.
 *   Open `application.properties` in `/src/main/resources` and add
 

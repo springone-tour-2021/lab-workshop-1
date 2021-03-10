@@ -7,3 +7,9 @@ There are two options that work in VS Code locally as well as in the IDE in the 
 *   Type in the port number in the control panel that pops up (5005 is used by Skaffold by default).
 
 ![alt_text](images/image3.jpg "image_tooltip")
+
+
+Be sure to detach the debugger and kill the `skaffold` process before continuing
+```terminal:interrupt
+session: 1
+```
