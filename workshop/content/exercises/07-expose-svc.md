@@ -4,7 +4,7 @@
 
 > An Ingress is an API object that defines rules which allow external access to services in a cluster. An Ingress controller fulfills the rules set in the Ingress.
 
-Next, you will go create `ingress.yaml` so you can access your app outside of the clister. 
+Next, you will go create `ingress.yaml` so you can access your app outside of the cluster. 
 
 Click below to create your `ingress.yaml`.
 ```editor:append-lines-to-file
