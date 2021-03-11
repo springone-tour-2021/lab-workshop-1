@@ -1,5 +1,5 @@
 
-You can use `kustomize build` to build the customizations and produce all of the YAML to deploy our application.
+You can use `kustomize build` to build the customizations and produce all of the YAML to deploy our application. This command will return the generated YAML as output in the terminal.
 
 To build the base profile for our application run the following command.
 ```execute-1

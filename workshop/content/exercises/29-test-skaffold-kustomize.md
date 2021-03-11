@@ -6,22 +6,24 @@ skaffold dev --port-forward
 
 ```
 
-
-
-If you want to test out the QA deployment you can specify the `qa` profile.
-
-Terminate the currently running Skaffold process before trying the `qa` profile.
+Terminate the currently running Skaffold process.
 
 ```terminal:interrupt
 session: 1
 ```
 
+Run the following command specifying the `qa` profile to test out the QA deployment.
 
 ```execute-1
 skaffold dev -p qa --port-forward
 ```
 
-Test your deployment freely.
+Test your deployment freely. You can validate that two pods are created when the qa profile is specified.
+```execute-2
+kubectl get all
+```
+
+You can also validate that the app is functional.
 ```execute-2
 curl localhost:4503
 ```

@@ -8,6 +8,7 @@ To exit Skaffold in terminal one.
 session: 1
 ```
 
+You should see the following output.
 ```
 ...
 WARN[2086] exit status 1

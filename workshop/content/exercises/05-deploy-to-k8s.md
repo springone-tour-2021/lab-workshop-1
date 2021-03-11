@@ -14,7 +14,7 @@
 
 *   Kubernetes uses YAML files to provide a way of describing how the app will be deployed to the platform
 *   You can write these by hand using the [Kubernetes documentation](https://kubernetes.io/docs/home/) as a reference
-*   Or you can have Kubernetes generate it for you using `kubectl`
+*   Or you can have Kubernetes generate them for you using `kubectl`
 *   The `--dry-run` flag allows us to generate the YAML without actually deploying anything to Kubernetes
 
 Lets create a directory to put the files we will need to deploy our application to Kubernetes
@@ -29,7 +29,7 @@ The first file we need is a deployment descriptor.  Execute the following comman
 kubectl create deployment k8s-demo-app --image {{ registry_host }}/apps/demo -o yaml --dry-run=client > ~/demo/k8s/deployment.yaml
 ```
 
-*   The resulting `k8s/deployment.yaml` should look like this.
+*   The resulting `k8s/deployment.yaml` should look like this. You can switch to the Editor tab to compare with the file you just created.
 
 ```yaml
 apiVersion: apps/v1
@@ -75,7 +75,7 @@ kubectl create service clusterip k8s-demo-app --tcp 80:8080 -o yaml --dry-run=cl
 ```
 
 
-*   The resulting `service.yaml` should look similar to this
+*   The resulting `service.yaml` should look similar to this. Again, you can switch to the Editor tab to compare with the file you just created.
 
 ```yaml
 apiVersion: v1
@@ -106,7 +106,8 @@ status:
 
 
 *   The deployment and service descriptors have been created in the `/k8s` directory
-*   Apply these to get everything running
+*   Since we used the `--dry-run` flag to generate them, they have not yet been applied to Kubernetes
+*   Apply these now to get everything running
 *   You can watch as the pods and services get created
 
 To apply your manifest files and get the app running, run the following command

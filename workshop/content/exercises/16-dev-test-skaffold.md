@@ -4,7 +4,7 @@ Skaffold makes some enhancements to our development workflow when using Kubernet
 *   Push the container to the registry (Docker)
 *   Apply the deployment and service YAMLs
 *   Stream the logs from the Pod to your terminal
-*   Automatically setup port forwarding
+*   Automatically set up port forwarding
 
 Run the following command to have Skaffold build and deploy our application to Kubernetes.
 ```execute-1
@@ -29,7 +29,7 @@ session: 2
 When running `skaffold dev --port-forward` you will see a line in your console that looks like this
 
 ```
-Port forwarding service/k8s-demo-app in namespace rbaxter, remote port 80 -> address 127.0.0.1 port 4503
+Port forwarding service/k8s-demo-app in namespace eduk8s-labs-w01-s010, remote port 80 -> address 127.0.0.1 port 4503
 
 ```
 

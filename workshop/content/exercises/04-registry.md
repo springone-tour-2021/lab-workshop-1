@@ -14,10 +14,13 @@
 ### 
 **Run The Build And Deploy The Container**
 
+*   For convenience, the address of the local private docker registry for this lab is saved in an environment variable. You can see it by running the following command.
 
+```execute-1
+echo $REGISTRY_HOST
+```
 
-*   Run the following Maven command to build the application and container.  `spring-boot.build-image.imageName`
-allows us to specify the image name.
+*   Run the following Maven command to re-build the image, this time including the registry address in the image name by setting the property `spring-boot.build-image.imageName`.
 
 ```execute-1
 ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=$REGISTRY_HOST/apps/demo

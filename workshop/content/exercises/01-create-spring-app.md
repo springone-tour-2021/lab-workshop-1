@@ -35,14 +35,14 @@ text: |
 
 ```
 
-Now, add your 'Helllo World' rest controller
+Now, add your 'Hello World' rest controller
 ```editor:insert-lines-before-line
 file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 line: 17
 text: |
     @GetMapping("/")
 	public String hello() {
-		return "HelloWorld\n";
+		return "Hello World\n";
 	}
     
 ```

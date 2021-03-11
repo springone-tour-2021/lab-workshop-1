@@ -19,7 +19,7 @@ text: |
 ```
 
 
-NOTE: Optionally, you can now remove all the labels and annotations in the metadata of both objects and specs inside objects. Kustomize adds default values that link a service to a deployment. If there is only one of each in your manifest then it will pick something sensible.
+NOTE: Optionally, you can now remove all the labels and annotations in the metadata of objects and specs inside objects. Kustomize adds default values that link objects to each other (e.g. to link a service to a deployment). If there is only one of each in your manifest then it will pick something sensible.
 
 ---
 
