@@ -40,7 +40,7 @@ text: |
 
 ```
 
-Here we tell Kustomize that we want to patch the resources from the `base` directory with the `update-replicas.yaml` file
+Here we tell Kustomize that we want to patch the resources from the `base` directory with the `update-replicas.yaml` file.
 Notice that in `update-replicas.yaml` we are just updating the properties we care about, in this case the `replicas`.
 
 

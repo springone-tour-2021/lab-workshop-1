@@ -3,7 +3,7 @@ Kubernetes by doing the following:
 
 *   Create a basic Spring Boot app
 *   Build a Docker image for the app
-*   Push the app to a Docker repo
+*   Push the app to a Docker registry
 *   Create deployment and service descriptors for Kubernetes
 *   Deploy and run the app on Kubernetes
 *   External configuration and service discovery

@@ -1,8 +1,10 @@
 **Skaffold**
 
-*   [Skaffold](https://github.com/GoogleContainerTools/skaffold) is a command line tool that facilitates continuous development for Kubernetes applications
-*   Simplifies the development process by combining multiple steps into one easy command
-*   Provides the building blocks for a CI/CD process
+Thus far, to deploy any changes to the app, we have needed to re-build the image, push it to the docker registry, recreate the pod in Kubernetes, and potentially port-forward for testing. We can automate these steps (and more) using a command line tool called [Skaffold](https://github.com/GoogleContainerTools/skaffold).
+
+*   Skaffold facilitates continuous development for Kubernetes applications by handling the workflow for building, pushing and deploying your application.
+*   It simplifies the development process by combining multiple steps into one easy command
+*   It provides the building blocks for a CI/CD process
 
 
 Confirm Skaffold is installed by running the following command
@@ -50,7 +52,9 @@ text: |
           localPort: 4503
 ```
 
-The `builder` is the same one used by Spring Boot when it builds a container from the build plugins (you would see it logged on the console when you build the image). Instead of the `buildpacks` builder you could use the `custom` one (with the same `dependencies`):
+The `builder` is the same one used by Spring Boot when it builds a container from the build plugins (you would see it logged on the console when you build the image). 
+
+An alternative syntax for the `build` section would be to use `custom` instead of `buildpacks` configuration. For example:
 
 
 ```

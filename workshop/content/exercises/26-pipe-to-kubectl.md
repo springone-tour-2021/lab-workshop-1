@@ -10,13 +10,13 @@ kustomize build kustomize/qa | kubectl apply -f -
 
 
 
-If you are watching the pods in your Kubernetes namespace you will see two pods created instead of one because we build the QA customization.
+If you are watching the pods in your Kubernetes namespace you will see two pods created instead of one because we generated the YAML using the QA customization.
 ```execute-2
 watch -n 1 kubectl get all
 ```
 
 ```
-Every 1.0s: kubectl get all                                 Ryans-MacBook-Pro.local: Mon Feb  3 12:00:04 2020
+Every 1.0s: kubectl get all                                 eduk8s-labs-w01-s010-669db9789f-dkdd5: Mon Feb  3 12:00:04 2020
 
 NAME                                READY   STATUS    RESTARTS   AGE
 pod/k8s-demo-app-647b8d5b7b-r2999   1/1     Running   0          83s

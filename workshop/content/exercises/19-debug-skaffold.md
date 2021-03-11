@@ -27,5 +27,5 @@ file: ~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java
 text: "return" 
 ```
 
-Example: Adding breakpoint, notice the dot on the return statement (Click image to enlarge).
+Example: To add a breakpoint, click to the left of the line number in the Editor. Notice the dot on the return statement (Click image to enlarge).
 ![alt_text](images/image2.png "~/demo/src/main/java/com/example/demo/K8sDemoAppApplication.java")

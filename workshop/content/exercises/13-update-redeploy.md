@@ -29,12 +29,12 @@ kubectl apply -f ~/demo/k8s
 ```
 
 
-You can run the following command to watch Kubernetes terminate the old container and redeploy a new one in real time.
+You can run the following command to watch Kubernetes terminate the old container and redeploy a new one in real time. Notice the status of the older pod changing from `Running` to `Terminating` before the old pod disappears.
 ```execute-1
 watch -n 1 kubectl get all
 ```
 
-You can stil test with curl.
+You can still test with curl.
 ```execute-2
 curl k8s-demo-app-{{ session_namespace }}.{{ ingress_domain }}
 ```
