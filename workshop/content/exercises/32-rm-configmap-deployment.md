@@ -9,7 +9,7 @@ kubectl delete configmap log-level
 In `kustomize/base/deployment.yaml` remove the `envFrom` properties we added
 
 ```execute-1
-sed -i '32,34d' ~/demo/kustomize/base/deployment.yaml
+sed -i '39,41d' ~/demo/kustomize/base/deployment.yaml
 ```
 
 *   Next we will use Kustomize to make generating ConfigMaps easier
