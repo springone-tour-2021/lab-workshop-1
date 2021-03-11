@@ -43,6 +43,10 @@ break at our breakpoint, at which point you can step through the code, view vari
 curl localhost:4503
 ```
 
+Stop the Skaffold process by executing the following command
+```terminal:interrupt
+session: 1
+```
 
 
 ---
