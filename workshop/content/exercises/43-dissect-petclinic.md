@@ -28,11 +28,11 @@ configMapGenerator:
 
 
 
-*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/dsyer/docker-services` and look at `layers/samples/petclinc/kustomization.yaml`.
+*   The relative paths `../../*` are all relative to this file. Clone the repository to look at those: `git clone https://github.com/springone-tour-2021/docker-services.git` and look at `layers/samples/petclinc/kustomization.yaml`.
 
 Clone the repository for the `kustomization.yaml`.
 ```execute-2
-git clone https://github.com/dsyer/docker-services
+git clone https://github.com/springone-tour-2021/docker-services.git
 ```
 
 Look at `~/docker-services/layers/samples/petclinic/kustomization.yaml`.
