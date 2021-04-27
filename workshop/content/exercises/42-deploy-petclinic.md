@@ -63,7 +63,7 @@ kubectl get ingress -w
 You can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
 ```copy
-petclinic-app-{{ session_namespace }}.{{ ingress_domain }}
+http://petclinic-app-{{ session_namespace }}.{{ ingress_domain }}
 ```
 
 
