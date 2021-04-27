@@ -21,7 +21,7 @@ spec:
         port: 80
       dashboards:
       - name: Petclinic
-        url: "http://$(session_namespace)-petclinic.$(ingress_domain)/"
+        url: "http://petclinic-app.$(session_namespace).svc.cluster.local"
     namespaces:
       budget: large
     resources:  
