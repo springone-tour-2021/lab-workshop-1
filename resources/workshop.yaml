@@ -11,7 +11,7 @@ spec:
   url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
     image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
-    files: github.com/springone-tour-2021/lab-workshop-1?ref=main
+    files: github.com/springone-tour-2021/lab-workshop-1?ref=dev
   session:
     session:
       ingresses:
@@ -21,7 +21,7 @@ spec:
         port: 80
       dashboards:
       - name: Petclinic
-        url: "$(ingress_protocol)://$(session_namespace)-petclinic.$(ingress_domain)/"
+        url: "$(ingress_protocol)://petclinic-$(session_namespace).$(ingress_domain)/"
     namespaces:
       budget: large
     resources:  
