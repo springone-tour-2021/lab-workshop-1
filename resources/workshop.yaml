@@ -21,7 +21,7 @@ spec:
         port: 80
       dashboards:
       - name: Petclinic
-        url: "http://petclinic-$(session_namespace).$(ingress_domain)/"
+        url: "http://$(session_namespace)-petclinic.$(ingress_domain)/"
     namespaces:
       budget: large
     resources:  
