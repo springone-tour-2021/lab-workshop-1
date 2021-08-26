@@ -1,4 +1,4 @@
-FROM quay.io/eduk8s/base-environment:master
+FROM quay.io/eduk8s/jdk11-environment:master
 
 
 COPY --chown=1001:0 . /home/eduk8s/
