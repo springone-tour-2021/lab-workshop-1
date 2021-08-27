@@ -3,7 +3,7 @@
 *   We have a Kustomization that we can use to easily get it up and running
 
 ```execute-1
-kustomize build https://github.com/dsyer/docker-services/layers/samples/petclinic?ref=HEAD | kubectl apply -f -
+kustomize build https://github.com/springone-tour-2021/docker-services/layers/samples/petclinic?ref=HEAD | kubectl apply -f -
 ```
 
 The above `kustomize build` command may take some time to complete.  You can watch the pod status to know once everything is ready.
@@ -62,8 +62,8 @@ kubectl get ingress -w
 
 You can open the host name in your browser or click the action below to open the Pet Clinic dashboard in the workshop.
 
-```dashboard:open-dashboard
-name: Petclinic
+```copy
+http://petclinic-app-{{ session_namespace }}.{{ ingress_domain }}
 ```
 
 

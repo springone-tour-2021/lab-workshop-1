@@ -11,7 +11,7 @@ spec:
   url: https://github.com/springone-tour-2021/lab-workshop-1
   content:
     image: quay.io/eduk8s/jdk11-environment:210217.091829.d9293c8
-    files: github.com/springone-tour-2021/lab-workshop-1?ref=main
+    files: github.com/springone-tour-2021/lab-workshop-1?ref=eu-springtour
   session:
     session:
       ingresses:
